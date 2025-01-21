@@ -1,6 +1,6 @@
 .sub-main{
     padding-block: 30px;
-    background-color: black;
+    background-color: var(--second-bg-color);
     display: flex;
 }
 .sub-logo img{

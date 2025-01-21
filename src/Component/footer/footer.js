@@ -80,11 +80,11 @@ const Footer = () => {
                 </Container>
             </Layout.Footer>
 
-            <div className="footer-content" style={{ background: "black", }}>
+            <div className="footer-content" style={{ background: "var(--second-bg-color)", }}>
                 <Container >
                     <div className="sub-footer-content">
                         <div className="footer-text">
-                            <Text style={{ color: '#ffff' }}>
+                            <Text style={{ color: 'var(--text-color)' }}>
                                 © {new Date().getFullYear()} Cave Consulting. All Rights Reserved.
                             </Text>
                         </div>

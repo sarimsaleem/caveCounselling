@@ -3,10 +3,10 @@
   width: 115px;
 }
 
-.footer {
+/* .footer {
   background: #e71313;
 }
-
+ */
 
 .ant-typography {
   margin: 3px 0;
@@ -30,7 +30,7 @@
 
 .footer-links a {
   text-decoration: none;
-  color: black;
+  color: var(--second-bg-color);
   letter-spacing: 1px;
   padding: 0 16px;
   font-size: 16px;
@@ -46,7 +46,7 @@
 
 .footer-icons .icon {
   text-decoration: none;
-  color: #000;
+  color: var(--second-bg-color);
   padding: 0 16px;
   font-size: 30px;
 }

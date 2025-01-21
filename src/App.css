@@ -47,7 +47,7 @@ body {
 :root{
     --them-color: #f1e8e0;
     --them-secondary : #5a5c47;
-    --second-bg-color:#202020;
+    --second-bg-color:#000;
     --text-color:#fff;
     /* --second-color:#ccc; */
     /* --main-color:#ff4d05; */

@@ -67,7 +67,7 @@
 .service-card-btn > button {
     padding: 12px 25px;
     background: var(--them-secondary) !important;
-    color: white;
+    color: var(--text-color);
     border: none;
     border-radius: 0px;
     font-weight: 600;
@@ -84,11 +84,11 @@
 
 .modal-btn{
     background-color: var(--them-secondary);
-    color: white;
+    color: var(--text-color);
 }
 .modal-btn:hover{
     background-color: var(--them-secondary);
-    color: white;
+    color: var(--text-color);
 
 }
 

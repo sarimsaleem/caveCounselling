@@ -1,48 +1,59 @@
-.about-main-content{
+.about-main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: aliceblue;
 }
+
 .about-main-content h4 {
     font-size: 30px;
 }
+
 .about-main-content h1 {
     font-size: 70px;
     padding-block: 30px !important;
 }
-.about-main-content p{
+
+.about-main-content p {
     font-size: 20px;
 }
+
 .about-para {
     font-size: 15px;
 }
-.about-heading{
+
+.about-heading {
     text-align: start !important;
 }
-.about-paragh::first-letter{
-    font-size: 3em; /* Yeh aapko size adjust karne mein help karega */
-    float: left; /* Yeh text ko left align karega */
-    margin-right: 5px; /* Yeh main text aur drop cap ke beech mein spacing add karega */
+
+.about-paragh::first-letter {
+    font-size: 3em;
+    /* Yeh aapko size adjust karne mein help karega */
+    float: left;
+    /* Yeh text ko left align karega */
+    margin-right: 5px;
+    /* Yeh main text aur drop cap ke beech mein spacing add karega */
     line-height: 1;
 }
-.about-para{
+
+.about-para {
     padding-top: 30px !important;
 }
+
 .para-bold {
     font-weight: bold;
     font-size: 16px;
 }
+
 .about-img {
     margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    /* box-shadow: 0px 0px 5px 0px rgba(186,198,176, 0.25); */
-    /* background-color: #ffff; */
 }
-.about-img  img{
+
+.about-img img {
     width: 100%;
     max-height: 520px;
     object-fit: contain;
@@ -50,31 +61,36 @@
     border-radius: 0;
     box-shadow: none;
 }
+
 .ceo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
 }
-.ceo-img img{
+
+.ceo-img img {
     width: 90px;
     object-fit: contain;
     border-radius: 50%;
 }
-.ceo-main h6{
+
+.ceo-main h6 {
     font-size: 17px;
 }
+
 @media (max-width: 768px) {
-    .about-img img{
+    .about-img img {
         width: 100%;
         /* min-width: 300px; */
     }
+
     .about-img {
         margin-top: 20px;
         /* display: flex; */
         /* align-items: center; */
         /* justify-content: center; */
-        
+
         padding: 0px;
         box-shadow: none;
         background: none !important;

@@ -15,7 +15,6 @@
     background-color: rgba(255, 255, 255, 0.85) !important;
 }
 
-/* Logo Styling */
 .navbar-logo > h4  > span{
     color: var(--them-secondary);
 }
@@ -31,7 +30,7 @@
 /* Navbar Links */
 .navbar-nav .nav-item .nav-link {
     font-weight: normal;
-    color: #000 !important;
+    color: var(--second-bg-color) !important;
     transition: background 0.3s, border-bottom 0.3s;
 }
 
@@ -45,14 +44,14 @@
     padding: 10px 30px;
     border: 1px solid var(--them-secondary) !important;
     border-radius: 0;
-    color: rgb(0, 0, 0);
+    color: var(--second-bg-color);
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar-icons .btn-outline-primary:hover {
     background-color:var(--them-secondary) !important;
-    color: white;
+    color: var(--text-color);
 }
 
 
@@ -77,7 +76,7 @@
     .nav-link {
         font-size: 13px;
         text-align: center;
-        color: #fff;
+        color: var(--text-color);
     }
 
     .navbar-toggler {
@@ -121,7 +120,7 @@
         padding: 10px 5px;
         border: 1px solid var(--them-secondary);
         border-radius: 0;
-        color: rgb(0, 0, 0);
+        color: var(--second-bg-color);
         cursor: pointer;
         align-items: center;
         transition: background-color 0.3s, color 0.3s;

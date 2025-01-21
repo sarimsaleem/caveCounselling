@@ -29,7 +29,7 @@
     padding: 18px;
     width: 100%;
     gap: 20px;
-    background-color: #fff;
+    background-color: var(--text-color);
     /* border-radius: 8px; */
     box-shadow: 0 2px 8px rgba(186,198,176, 0.55);
   }
@@ -69,7 +69,7 @@
   
   .contact-btn>button {
     padding: 10px 35px;
-    background-color: black;
+    background-color: var(--second-bg-color);
     color: aliceblue;
   }
   
@@ -87,7 +87,7 @@
   }
   
   .contact-btn>button:hover {
-    background-color: white;
+    background-color: var(--text-color);
     transition: 0.3s ease all;
     border: 1px solid var(--them-color);
     color: var(--them-color);
@@ -97,7 +97,7 @@
   .fst-lst>input,
   .email>input {
     margin: 0 0 30px 0;
-    background-color: #fff;
+    background-color: var(--text-color);
     border: 1px solid #f0f0f0;
     border-radius: 4px;
     box-shadow: 0 2px 4px 0 rgba(186,198,176, .06);
