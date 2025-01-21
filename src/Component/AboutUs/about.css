@@ -1,3 +1,7 @@
+.about-main{
+background-color: var(--them-secondary);
+}
+
 .about-main-content {
     display: flex;
     flex-direction: column;
@@ -24,20 +28,21 @@
 
 .about-heading {
     text-align: start !important;
+    color: var(--them-color);
 }
 
 .about-paragh::first-letter {
     font-size: 3em;
-    /* Yeh aapko size adjust karne mein help karega */
     float: left;
-    /* Yeh text ko left align karega */
     margin-right: 5px;
-    /* Yeh main text aur drop cap ke beech mein spacing add karega */
     line-height: 1;
+    color: var(--text-color);
 }
 
 .about-para {
     padding-top: 30px !important;
+    color: var(--them-color);
+
 }
 
 .para-bold {

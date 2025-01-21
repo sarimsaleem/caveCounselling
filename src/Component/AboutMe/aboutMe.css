@@ -1,5 +1,10 @@
+.about-us-msg{
+background: var(--them-color);
+}
+
 .msg-heading {
     text-align: start !important;
+    /* color: var(--them); */
 }
 .msg-heading > h3 {
     font-size: 30px;
@@ -13,6 +18,7 @@
 }
 .msg-content > p {
     font-size: 15px;
+    color: var(--second-bg-category-heading);
 }
 
 .msg-img > img {

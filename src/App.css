@@ -12,18 +12,19 @@ body {
 .heading-with-sub > h6{
   font-size: 20px;
   letter-spacing: 4px;
-  color: var(--them-secondary);
+  /* color: var(--them-secondary); */
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 .heading-with-sub > h3{
   font-size: 40px;
-  color: var(--third-them-color);
+  /* color: var(--them-secondary); */
   font-weight: 700;
 }
 .heading-with-sub > p{
   margin-top: 15px !important;
   font-size: 17px;
+  /* color: var(--them-secondary); */
 }
 
 @media (max-width: 768px) {

@@ -14,7 +14,7 @@
 }
 .sub-content > .sub-link h4 {
     font-size: 17px;
-    color: aliceblue;
+    color: var(--them-color);
     font-weight: 600;
 }
 .sub-icons {
@@ -22,7 +22,7 @@
     gap: 20px;
 }
 .sub-icons > i > svg {
-    color: aliceblue;
+    color: var(--them-color);
     width: 25px;
     height: 25px;
     cursor: pointer;

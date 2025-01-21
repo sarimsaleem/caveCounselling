@@ -1,4 +1,11 @@
-/* Service Card */
+.services-main{
+background: var(--them-secondary);
+}
+
+.services-heading{
+    color: var(--them-color);
+}
+
 .service-card {
     width: 100%;
     background: linear-gradient(#39913a95, #0f0f0f75), url('./../../Assets/adult.jpg');
@@ -7,33 +14,29 @@
     background-repeat: no-repeat;
     height: 320px;
     padding: 20px;
-    /* border-radius: 10px; */
-    box-shadow: 0 10px 30px rgba(186,198,176, 0.3);
+    box-shadow: 0 10px 30px rgba(186, 198, 176, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(186,198,176, 0.4);
+    box-shadow: 0 15px 40px rgba(186, 198, 176, 0.4);
 }
 
-/* Child Counselling Specific Styles */
 .child-counselling {
     background: linear-gradient(#39913a95, #0f0f0f75), url('./../../Assets/child.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* border-radius: 10px; */
-    box-shadow: 0 10px 30px rgba(186,198,176, 0.3);
+    box-shadow: 0 10px 30px rgba(186, 198, 176, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .child-counselling:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(186,198,176, 0.4);
+    box-shadow: 0 15px 40px rgba(186, 198, 176, 0.4);
 }
 
-/* Service Card Container */
 .service-card-container {
     margin-top: 30px;
     display: flex;
@@ -42,7 +45,6 @@
     gap: 20px;
 }
 
-/* Service Card Content */
 .service-card-content {
     color: aliceblue;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -58,13 +60,12 @@
     text-align: center;
 }
 
-/* Button Styling */
 .service-card-btn {
     margin-top: 30px;
     z-index: 1;
 }
 
-.service-card-btn > button {
+.service-card-btn>button {
     padding: 12px 25px;
     background: var(--them-secondary) !important;
     color: var(--text-color);
@@ -77,22 +78,22 @@
     transition: all 0.3s ease;
 }
 
-.service-card-btn > button:hover {
+.service-card-btn>button:hover {
     background: #333 !important;
     transform: scale(1.05);
 }
 
-.modal-btn{
+.modal-btn {
     background-color: var(--them-secondary);
     color: var(--text-color);
 }
-.modal-btn:hover{
+
+.modal-btn:hover {
     background-color: var(--them-secondary);
     color: var(--text-color);
 
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .service-card-container {
         flex-direction: column;
@@ -110,13 +111,16 @@
         font-size: 28px;
     }
 }
-.modal-body{
+
+.modal-body {
     padding: 20px;
 }
+
 .modal-body p {
     font-size: 14px;
     /* padding: 20px; */
 }
-.border-radius{
+
+.border-radius {
     border-radius: 0px;
 }
