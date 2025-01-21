@@ -1,64 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.section-padding{
+.section-padding {
   padding-block: 70px;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
 .heading-with-sub {
   text-align: center;
 }
-.heading-with-sub > h6{
+
+.heading-with-sub>h6 {
   font-size: 20px;
   letter-spacing: 4px;
   /* color: var(--them-secondary); */
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-.heading-with-sub > h3{
+
+.heading-with-sub>h3 {
   font-size: 40px;
   /* color: var(--them-secondary); */
   font-weight: 700;
 }
-.heading-with-sub > p{
+
+.heading-with-sub>p {
   margin-top: 15px !important;
   font-size: 17px;
   /* color: var(--them-secondary); */
 }
 
 @media (max-width: 768px) {
-  .heading-with-sub > h6{
+  .heading-with-sub>h6 {
     font-size: 16px;
     letter-spacing: 3px;
   }
-  .heading-with-sub > h3{
+
+  .heading-with-sub>h3 {
     font-size: 30px;
     font-weight: 700;
   }
-  .heading-with-sub > p{
+
+  .heading-with-sub>p {
     margin-top: 15px !important;
     font-size: 14px;
   }
-  .section-padding{
+
+  .section-padding {
     padding-block: 40px;
   }
-} 
+}
 
-:root{
-    --them-color: #f1e8e0;
-    --them-secondary : #5a5c47;
-    --second-bg-color:#000;
-    --text-color:#fff;
-    /* --second-color:#ccc; */
-    /* --main-color:#ff4d05; */
-    --big-font:55px;
-    --h4-font:16px;
-    --h4-span-weig:600;
-    --p-font:17px;
-    --font-family: inherit;
-    --stylish-font : "Leckerli One", cursive;
-    --main-heading : 70px;
-    --third-them-color  :  #254336;
-  };
+:root {
+  --them-color: #f1e8e0;
+  --them-secondary: #5a5c47;
+  --second-bg-color: #000;
+  --text-color: #fff;
+  /* --second-color:#ccc; */
+  /* --main-color:#ff4d05; */
+  --big-font: 55px;
+  --h4-font: 16px;
+  --h4-span-weig: 600;
+  --p-font: 17px;
+  --font-family: inherit;
+  --stylish-font: "Leckerli One", cursive;
+  --main-heading: 70px;
+  --third-them-color: #254336;
+}
 
+;
+
+
+
+/* /////////////////////////////////////// */
+
+.contact-us {
+  background: var(--them-color);
+}
