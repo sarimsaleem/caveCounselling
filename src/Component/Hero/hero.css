@@ -1,0 +1,120 @@
+.hero-main {
+    background-image: url(../../Assets/hero.jpg );
+    width: 100%;
+    /* background-position: center; */
+    background-size: cover;
+    padding-block: 70px;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-content {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 90px;
+    align-items: start;
+    flex-direction: column;
+}
+.hero-content-heading {
+    margin-bottom: 20px;
+}
+.hero-content-heading h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: var(--them-secondary) !important;
+}
+
+.hero-content-heading h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+.hero-content > p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.hero-img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hero-img-container>img {
+    width: 100%;
+    object-fit: contain;
+}
+.hero-content-btn > button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-weight: 600;
+    border:none;
+    color: aliceblue;
+    background-color: var(--them-secondary);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hero-img-container > img {
+        width: 100%;
+    }
+
+    /* Additional mobile styles go here */
+}
+
+/* Tablet Styling: min-width: 768px and max-width: 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-img-container>img {
+        width: 100%;
+    }
+    .hero-content-heading h1 {
+        font-size: 35px;
+        font-weight: 800;
+    }
+    .hero-content-heading h4 {
+        font-size: 14px;
+    }
+    .hero-content > p {
+
+        margin-top: 10px !important;
+        font-size: 14px;
+    }
+    .hero-content-btn > button{
+        padding: 10px 20px;
+        font-weight: 600;
+        font-size: 14px;
+        border:none;
+        color: aliceblue;
+        background-color: var(--them-secondary);
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content-heading h1 {
+        font-size: 35px;
+        font-weight: 800;
+    }
+    .hero-content-heading h4 {
+        font-size: 14px;
+    }
+    .hero-content > p {
+        margin-top: 10px !important;
+        font-size: 14px;
+    }
+    .hero-img-container>img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,129 @@
+.section-padding{
+    padding-block: 70px;
+  }
+  .faq-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      margin-bottom: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .question {
+      padding: 16px 0px;
+      font-weight: 400;
+      font-size: 17px;
+    }
+    
+    .answer {
+      padding: 0 0px 16px 0px;
+      display: block;
+      font-size: 15px;
+      color: #838383;
+    }
+    .faq-heading{
+      margin-bottom: 40px;
+    }
+    .faq-heading h1{
+      font-size: 40px;
+      font-family: var(--font-family);
+    }
+    .disclaimer{
+      text-align: center;
+      color: #838383;
+      padding-top: 30px;
+      padding-inline:120px ;
+    }
+    .disc-bold{
+      font-weight: bold;
+      color: #838383;
+    }
+    .plus{
+      color: #838383;
+      font-weight: 500;
+    }
+    .faq-main{
+      position: relative;
+    }
+    .star-page-faq {
+      position: absolute;
+      top: 630px;
+      left: 60px;
+      right: auto;
+      bottom: 0px;
+      width: 100px;
+  }
+  .star-page-faq img{
+      width: 20px;
+      height: auto;
+      object-fit: contain;
+  }
+  .page-shade-faq{
+    position: absolute;
+      top: 630px;
+      left: -10px;
+      right: auto;
+      bottom: auto;
+      width: 100px;
+  }
+  .page-shade-faq img{
+      width: 100px;
+      height: auto;
+  }
+  
+  
+  .answer{
+    padding-right: 40px;
+  }
+  
+  @media  (max-width: 767px)  {
+  
+    .faq-heading h1 {
+      font-size: 23px;
+  }
+  .answer {
+    padding: 0 0px 12px 0px;
+    font-size: 12px;
+    color: #838383;
+  }
+  .disclaimer{
+    padding-inline: 0;
+  }
+  .disclaimer p{
+    font-size: 13px;
+  }
+  .page-shade-faq{
+    top: 760px;
+  }
+  .star-page-faq{
+    bottom: -50px;
+  }
+  .page-shade-faq img {
+    width: 50px;
+    height: auto;
+  }
+  .question{
+    font-size: 13px;
+  }
+  hr{
+    margin: 0px;
+  }
+    }
+    @media (min-width :768px) and (max-width : 991px){
+      .disclaimer{
+        padding-inline: 0;
+      }
+      .star-page-faq{
+        bottom: -20px;
+      }
+      .page-shade-faq{
+        top: 560px;
+      }
+    
+    }
+    @media (min-width : 992px) and (max-width : 1199px){
+    
+    }

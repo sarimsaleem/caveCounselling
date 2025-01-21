@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.swiper-container-main{
+  margin-top: 50px;
+}
+.swiper-container {
+  /* border-radius: 10px; */
+  /* width: 70vw; */
+  overflow: hidden;
+  position: relative;
+  /* margin-bottom: 50px; */
+}
+
+.swiper-slide {
+  width: auto;
+  /* height: 200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(186,198,176, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(186,198,176, 0.15);
+}
+
+.ImgHolder {
+  width: 100%;
+  background-color: var(--them-color);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.ImgHolder img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  outline: 3px solid  var(--them-color);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.ImgHolder img:hover {
+  transform: scale(1.1);
+}
+
+.ContentHolder {
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  text-align: center;
+}
+
+.ContentHolder h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.ContentHolder p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.ContentHolder::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color:  var(--them-color);
+  position: absolute;
+  top: -10px;
+  right: 0;
+  z-index: -1;
+  border-radius: 0 0 10px 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 1;
+  border: 2px solid #4361ee;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination{
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4361ee;
+  transform: scale(1.2);
+}
+
+.swiper-button {
+  border: 1px solid white;
+}
+
+@media (max-width: 638px) {
+  .swiper-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper-container {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .swiper-container {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    border-radius: 0;
+  }
+
+  .ImgHolder {
+    border-radius: 0;
+  }
+
+  .ContentHolder {
+    border-radius: 0;
+  }
+}
