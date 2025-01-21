@@ -41,12 +41,11 @@ body {
   }
   .section-padding{
     padding-block: 40px;
-    color: beige;
   }
 } 
 
 :root{
-    --them-color: beige;
+    --them-color: #f1e8e0;
     --them-secondary : #5a5c47;
     --second-bg-color:#202020;
     --text-color:#fff;

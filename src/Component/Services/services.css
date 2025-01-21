@@ -1,7 +1,7 @@
 /* Service Card */
 .service-card {
     width: 100%;
-    background: linear-gradient(#39913a95, #0f0f0f75), url('./../../Assets/adult.webp');
+    background: linear-gradient(#39913a95, #0f0f0f75), url('./../../Assets/adult.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 
 /* Child Counselling Specific Styles */
 .child-counselling {
-    background: linear-gradient(#39913a95, #0f0f0f75), url('./../../Assets/child.webp');
+    background: linear-gradient(#39913a95, #0f0f0f75), url('./../../Assets/child.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
