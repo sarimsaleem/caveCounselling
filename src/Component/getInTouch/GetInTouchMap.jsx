@@ -75,7 +75,7 @@ function GetInTouchMap() {
                                     </iframe>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-xl-4 col-lg-4 col-sm-12">
+                            <div className="col-md-6 col-xl-4 col-lg-4 col-sm-12"  >
                                 <div className="info-cards-container">
                                     <div className="info-cards">
                                         {infoCards.map((card, index) => (
@@ -101,7 +101,7 @@ function GetInTouchMap() {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="contact-us-form-heading heading-with-sub">
-                                <h6 className="p-0 m-0">Get in touch with Contact us</h6>
+                                <h6 className="p-0 m-0">Get in touch with us</h6>
                                 <h3 className="p-0 m-0">Fill The Form Below So We Can Get To Know You And Your Needs Better.</h3>
                             </div>
                         </div>
@@ -113,6 +113,7 @@ function GetInTouchMap() {
                                     <div class="row">
 
                                         <div class="fst-lst col-md-6 col-12">
+                                            <label className='contact-label' htmlFor="">First Name</label>
                                             <input type="name"
                                                 name='name'
                                                 class="form-control"
@@ -120,7 +121,7 @@ function GetInTouchMap() {
                                                 value={values.name}
                                                 onChange={handleChange}
                                                 onBlur={() => setFieldTouched('name', true, true)}
-                                                placeholder="Your First Name *" />
+                                                placeholder="john *" />
                                             {errors.name && touched.name ? (
                                                 <p className="p_msg">
                                                     {errors.name}
@@ -128,6 +129,7 @@ function GetInTouchMap() {
                                             ) : null}
                                         </div>
                                         <div class="col-6 col-md-6 col-12 email">
+                                        <label className='contact-label' htmlFor="">Last Name</label>
                                             <input
                                                 type="name"
                                                 name='lastName'
@@ -136,7 +138,7 @@ function GetInTouchMap() {
                                                 onBlur={() => setFieldTouched('lastName', true, true)}
                                                 class="form-control"
                                                 id="exampleFormControlInput1"
-                                                placeholder="Your Last Name *" />
+                                                placeholder="doe *" />
                                             {errors.lastName && touched.lastName ? (
                                                 <p className="p_msg">
                                                     {errors.lastName}
@@ -149,6 +151,7 @@ function GetInTouchMap() {
                                 <div class="col-md-12">
                                     <div class="row">
                                         <div class="fst-lst col-md-6 col-12">
+                                        <label className='contact-label' htmlFor="">E-mail</label>
                                             <input
                                                 value={values.email}
                                                 onChange={handleChange}
@@ -157,12 +160,13 @@ function GetInTouchMap() {
                                                 type="email"
                                                 class="form-control"
                                                 id="exampleFormControlInput1"
-                                                placeholder="Your Email *" />
+                                                placeholder="example@example.com *" />
                                             {errors.email && touched.email ? (
                                                 <p className='p_msg'>{errors.email}</p>
                                             ) : null}
                                         </div>
                                         <div class="col-6 col-md-6 col-12 email">
+                                        <label className='contact-label' htmlFor="">Subject</label>
                                             <input
                                                 value={values.select}
                                                 onChange={handleChange}
@@ -171,7 +175,7 @@ function GetInTouchMap() {
                                                 type="text"
                                                 class="form-control"
                                                 id="exampleFormControlInput1"
-                                                placeholder="Your Subject *" />
+                                                placeholder="your subject *" />
                                             {errors.select && touched.select ? (
                                                 <p className='p_msg'>{errors.select}</p>
                                             ) : null}
@@ -182,12 +186,13 @@ function GetInTouchMap() {
 
 
                                 <div class="text-section">
+                                <label className='contact-label' htmlFor="">Message</label>
                                     <textarea class="form-control"
                                         name='message'
                                         value={values.message}
                                         onChange={handleChange}
                                         onBlur={() => setFieldTouched('message', true, true)}
-                                        placeholder="Your Message"
+                                        placeholder="message..."
                                         id="exampleFormControlTextarea1" rows="8"></textarea>
                                     {errors.message && touched.message ? (
                                         <p className='p_msg msg'>
