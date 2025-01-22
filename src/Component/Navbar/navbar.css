@@ -22,6 +22,7 @@
 .navbar-logo > img {
     width: 240px;
     height: auto;
+    cursor: pointer;
 }
 
 .navbar-nav .nav-item {
