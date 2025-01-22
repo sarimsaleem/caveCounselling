@@ -1,9 +1,9 @@
 .services-main{
-background: var(--them-secondary);
+/* background: var(--them-secondary); */
 }
 
 .services-heading{
-    color: var(--them-color);
+    color: var(--second-bg-color);
 }
 
 .service-card {

@@ -47,6 +47,7 @@
     }
     .faq-main{
       position: relative;
+      background: var(--them-color); 
     }
     .star-page-faq {
       position: absolute;

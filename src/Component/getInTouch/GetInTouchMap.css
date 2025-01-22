@@ -1,9 +1,13 @@
 .contact-us {
-  background: var(--them-color);
+  background: var(--them-secondary);
 }
 
 .contact-us-form-heading{
   /* color: var(--them-color); */
+}
+
+.contact-us-heading{
+  color: var(--them-color);
 }
 
 .contact-container {

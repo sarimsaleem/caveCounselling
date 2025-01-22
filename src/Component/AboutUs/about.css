@@ -1,5 +1,5 @@
 .about-main{
-background-color: var(--them-secondary);
+background-color: var(--them-color);
 }
 
 .about-main-content {
@@ -28,7 +28,7 @@ background-color: var(--them-secondary);
 
 .about-heading {
     text-align: start !important;
-    color: var(--them-color);
+    color: var(--second-bg-color);
 }
 
 .about-paragh::first-letter {
@@ -36,12 +36,12 @@ background-color: var(--them-secondary);
     float: left;
     margin-right: 5px;
     line-height: 1;
-    color: var(--text-color);
+    color: var(--second-bg-color);
 }
 
 .about-para {
     padding-top: 30px !important;
-    color: var(--them-color);
+    color: var(--second-bg-color);
 
 }
 

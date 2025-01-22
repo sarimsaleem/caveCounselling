@@ -1,10 +1,10 @@
 .about-us-msg{
-background: var(--them-color);
+background: var(--them-secondary);
 }
 
 .msg-heading {
     text-align: start !important;
-    /* color: var(--them); */
+    color: var(--them-color);
 }
 .msg-heading > h3 {
     font-size: 30px;
@@ -15,10 +15,11 @@ background: var(--them-color);
 }
 .msg-content{
     margin-top: 20px;
+
 }
 .msg-content > p {
     font-size: 15px;
-    color: var(--second-bg-category-heading);
+    color: var(--them-color);
 }
 
 .msg-img > img {
