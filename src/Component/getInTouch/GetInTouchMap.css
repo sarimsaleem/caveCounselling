@@ -110,9 +110,9 @@
 .email>input {
   margin: 0 0 30px 0;
   background-color: var(--text-color);
-  border: 1px solid #f0f0f0;
+  border: 1px solid #d3caca;
   border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(186, 198, 176, 1);
+  /* box-shadow: 0 2px 4px 0 rgba(186, 198, 176, 1); */
   height: 57px;
   /* padding: 0 25px; */
 }
@@ -121,9 +121,9 @@
   color: #391965;
   display: flex;
   padding: 25px 25px 25px 15px;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #d3caca;
   border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(186, 198, 176, 1);
+  /* box-shadow: 0 2px 4px 0 rgba(186, 198, 176, 1); */
 }
 
 .contact-us-form-container {
