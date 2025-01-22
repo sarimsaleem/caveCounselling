@@ -2,16 +2,16 @@
   background: var(--them-secondary);
 }
 
-.contact-us-form{
-  
+.contact-us-form {
+
   background: var(--them-color);
 }
 
-.contact-us-form-heading{
+.contact-us-form-heading {
   /* color: var(--them-color); */
 }
 
-.contact-us-heading{
+.contact-us-heading {
   color: var(--them-color);
 }
 
@@ -32,7 +32,10 @@
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .info-card {
@@ -42,8 +45,6 @@
   width: 100%;
   gap: 20px;
   background-color: var(--text-color);
-  /* border-radius: 8px; */
-  /* box-shadow: 0 2px 8px rgba(186, 198, 176, 0.55); */
 }
 
 .info-card-content {
@@ -99,11 +100,11 @@
 }
 
 .contact-btn>button:hover {
-  background-color: var(--text-color);
+  /* background-color: var(--text-color); */
   transition: 0.3s ease all;
-  border: 1px solid var(--them-color);
+  /* border: 1px solid var(--them-color); */
   color: var(--them-color);
-  margin: 0px;
+  /* margin: 0px; */
 }
 
 .fst-lst>input,
@@ -146,11 +147,13 @@
   }
 
   .info-cards {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .info-card {
+    max-width: 100%;
+    /* Ensures cards stretch across full width on small screens */
   }
 
   .contact-btn>button {
@@ -162,6 +165,12 @@
   }
 }
 
-.contact-label{
+.contact-label {
   margin: 10px 0;
+}
+
+@media (min-width: 1400px) and (max-width:2000px) {
+  .info-cards {
+    gap: 27px;
+  }
 }
