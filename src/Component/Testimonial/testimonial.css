@@ -33,7 +33,9 @@
   display: flex;
   justify-content: center;
   padding: 20px;
-  /* border-radius: 20px; */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
 }
 
 .ImgHolder img {
@@ -54,7 +56,6 @@
   position: relative;
   padding: 15px;
   background-color: var(--text-color);
-  /* border-radius: 20px; */
   text-align: center;
 }
 
@@ -74,7 +75,7 @@
   content: '';
   width: 50px;
   height: 50px;
-  background-color:  var(--them-color);
+  /* background-color:  var(--them-color); */
   position: absolute;
   top: -10px;
   right: 0;
