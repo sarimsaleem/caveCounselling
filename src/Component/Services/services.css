@@ -1,8 +1,9 @@
 .services-main {
-    background-color: beige;
+    /* background-color: beige; */
 }
 
 .service-card {
+    position: relative; 
     width: 100%;
     background: url('./../../Assets/adult.jpg');
     background-size: cover;
@@ -11,10 +12,25 @@
     height: 320px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
+.service-card::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+
+.service-card-content {
+    position: relative; 
+    color: aliceblue;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1; 
 }
 
 .child-counselling {
@@ -23,6 +39,21 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.child-counselling::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Position it absolutely within the card */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 0; /* Place it behind the content */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
 }
 
 .child-counselling:hover {
@@ -37,11 +68,7 @@
     gap: 20px;
 }
 
-.service-card-content {
-    color: aliceblue;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
+
 
 .service-card-content h4 {
     font-size: 32px;
