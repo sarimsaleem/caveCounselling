@@ -17,7 +17,7 @@ function AboutMe() {
                         <div className='msg-container'>
                             <div className='msg-heading heading-with-sub'>
                                 <h3 className="p-0 m-0" style={{}}>About Me</h3>
-                                <h6 className="p-0 m-0">Hello I’m Shama</h6>
+                                <h6 className="p-0">Hello I’m Shama</h6>
                             </div>
                             <div className='msg-content'>
                                 <p>an Integrative Counsellor working with adults and specialising in children and young people</p>

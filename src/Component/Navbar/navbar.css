@@ -11,23 +11,25 @@
 .navbar.scrolled {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px rgba(186,198,176, 0.1);
+    box-shadow: 0 0 10px rgba(186, 198, 176, 0.1);
     background-color: rgba(255, 255, 255, 0.85) !important;
 }
 
-.navbar-logo > h4  > span{
+.navbar-logo>h4>span {
     color: var(--them-secondary);
 }
 
-.navbar-logo > img {
+.navbar-logo>img {
     width: 240px;
     height: auto;
     cursor: pointer;
 }
 
 .navbar-nav .nav-item {
-    margin-right: 15px; /* Gap between nav-items */
+    margin-right: 15px;
+    /* Gap between nav-items */
 }
+
 /* Navbar Links */
 .navbar-nav .nav-item .nav-link {
     font-weight: normal;
@@ -45,21 +47,32 @@
     padding: 10px 30px;
     border: 1px solid var(--them-secondary) !important;
     border-radius: 0;
-    color: var(--second-bg-color);
+    color: var(--text-color);
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    background: var(--them-secondary);
 }
 
 .navbar-icons .btn-outline-primary:hover {
-    background-color:var(--them-secondary) !important;
-    color: var(--text-color);
+    background-color: transparent !important;
+    color: var(--them-secondary);
+    font-weight: 500;
 }
 
+.navbar.scrolled .navbar-icons .btn-outline-primary{
+    background-color: transparent !important;
+    color: var(--them-secondary);    
+}
+.navbar.scrolled .navbar-icons .btn-outline-primary:hover{
+    background: var(--them-secondary) !important;
+    color: var(--text-color);
+
+}
 
 
 /* Mobile Styling */
 @media (max-width: 768px) {
-    .navbar-logo > img {
+    .navbar-logo>img {
         height: auto;
     }
 
@@ -83,40 +96,47 @@
     .navbar-toggler {
         display: block;
     }
-    .navbar-icons{
+
+    .navbar-icons {
         display: flex;
         justify-content: center;
         margin-top: 10px;
     }
+
     .navbar-icons .btn-outline-primary {
         padding: 8px 15px;
         font-size: 13px;
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
         backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(20px); /* Corrected WebKit prefix */
-        box-shadow: 0 0 10px rgba(186,198,176, 0.1);
+        -webkit-backdrop-filter: blur(20px);
+        /* Corrected WebKit prefix */
+        box-shadow: 0 0 10px rgba(186, 198, 176, 0.1);
         /* align-items: start; */
         padding: 10px 0px 20px;
     }
-   
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .hero-img-container>img {
         width: 100%;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .navbar-icons{
+
+    .navbar-icons {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 10px;
     }
+
     .navbar-icons .btn-outline-primary {
         padding: 10px 5px;
         border: 1px solid var(--them-secondary);

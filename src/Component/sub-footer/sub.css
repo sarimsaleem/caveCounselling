@@ -39,11 +39,11 @@
 }
 
 .sub-link>h4>span {
-    border-bottom: 1px solid var(--them-color);
+    border-bottom: 1px solid var(--second-bg-color);
 }
 
 .sub-link>h4>span:hover {
-    color: var(--them-color);
+    color: var(--second-bg-color);
     transition: all 0.4s;
 }
 

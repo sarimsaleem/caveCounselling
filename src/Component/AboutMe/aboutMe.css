@@ -4,7 +4,7 @@ background: var(--them-secondary);
 
 .msg-heading {
     text-align: start !important;
-    color: var(--them-color);
+    color: var(--text-color);
 }
 .msg-heading > h3 {
     font-size: 30px;
@@ -14,12 +14,12 @@ background: var(--them-secondary);
     margin-top: 20px !important;
 }
 .msg-content{
-    margin-top: 20px;
+    /* margin-top: 20px; */
 
 }
 .msg-content > p {
     font-size: 15px;
-    color: var(--them-color);
+    color: var(--text-color);
 }
 
 .msg-img > img {

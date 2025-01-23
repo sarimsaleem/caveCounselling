@@ -3,16 +3,11 @@
 }
 
 .contact-us-form {
-
   background: var(--them-color);
 }
 
-.contact-us-form-heading {
-  /* color: var(--them-color); */
-}
-
 .contact-us-heading {
-  color: var(--them-color);
+  color: var(--text-color);
 }
 
 .contact-container {
@@ -21,10 +16,7 @@
 
 .map-section {
   width: 100%;
-  /* border-radius: 8px; */
-  /* padding: 5px; */
   overflow: hidden;
-  /* box-shadow: 0 4px 12px rgba(186, 198, 176, 0.55); */
 }
 
 .info-cards {
@@ -147,7 +139,6 @@
 
   .info-card {
     max-width: 100%;
-    /* Ensures cards stretch across full width on small screens */
   }
 
   .contact-btn>button {

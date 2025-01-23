@@ -10,7 +10,7 @@ function AboutUs() {
                         <div className='col-md-7 col-sm-12 col-lg-7 col-xl-7'>
                             <div className='about-content'>
                                 <div className="heading-with-sub about-heading">
-                                    <h6 className="p-0 m-0">ABOUT</h6>
+                                    <h6 className="p-0">ABOUT</h6>
                                     <h3 className="p-0 m-0">CAVE COUNSELLING</h3>
                                 </div>
                                 <div className='about-para'>

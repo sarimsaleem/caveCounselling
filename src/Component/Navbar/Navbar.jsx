@@ -30,7 +30,6 @@ function Header() {
       <div className="container">
         <div className="navbar-logo" onClick={() => navigate('/')}>
           <img src={logo} alt="Logo" />
-          {/* <h4>CAVE <span>COUNSELLING</span></h4> */}
         </div>
         <button className="navbar-toggler" type="button" onClick={handleMenuClick} aria-controls="navbarNav" aria-expanded={menuOpen ? 'true' : 'false'} aria-label="Toggle navigation">
           <FaBars />

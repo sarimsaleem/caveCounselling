@@ -9,8 +9,8 @@ const Category = () => {
                 <div className="row">
                     <div className="col-md-12 col-sm-12 col-lg-12 col-xl-12">
                         <div className="category-heading heading-with-sub">
-                            <h6 className="p-0 m-0">Life can present</h6>
-                            <h3 className="p-0 m-0">us with difficult challenges, sometimes</h3>
+                            <h6 className="p-0 ">Life can present</h6>
+                            <h3 className="p-0 m-0">Us with difficult challenges, sometimes</h3>
                         </div>
                     </div>
                 </div>

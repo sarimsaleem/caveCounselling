@@ -46,7 +46,8 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 600;
-    color: var(--them-color) !important;
+    color: var(--text-color) !important;
+    /* font-family: "halimun"; */
 }
 
 .hero-content-heading h1 {
@@ -54,12 +55,14 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 800;
+    color: var(--text-color);
 }
 
 .hero-content > p {
     margin-top: 20px;
     font-size: 18px;
-    color: var(--them-color);
+    color: var(--text-color);
+    
 }
 
 .hero-img-container {
@@ -77,8 +80,8 @@
     padding: 15px 30px;
     font-weight: 600;
     border:none;
-    color: aliceblue;
-    background-color: var(--them-secondary);
+    color: var(--second-bg-color);
+    background-color: beige;
     cursor: pointer;
 }
 

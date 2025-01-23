@@ -1,28 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
 .testimonial{
-  /* background: var(--them-color); */
 }
 
 .swiper-container-main{
   margin-top: 50px;
 }
 .swiper-container {
-  /* border-radius: 10px; */
-  /* width: 70vw; */
   overflow: hidden;
   position: relative;
-  /* margin-bottom: 50px; */
 }
 
 .swiper-slide {
   width: auto;
-  /* height: 200px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--text-color);
-  /* border-radius: 10px; */
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(186,198,176, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -35,7 +29,7 @@
 
 .ImgHolder {
   width: 100%;
-  background-color: var(--them-color);
+  background-color: beige;
   display: flex;
   justify-content: center;
   padding: 20px;

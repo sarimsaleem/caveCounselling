@@ -42,7 +42,7 @@ const Testimonials = () => {
         <div className="row">
           <div className="col-md-12 col-sm-12 col-lg-12 col-xl-12">
             <div className="heading-with-sub">
-              <h6 className="p-0 m-0">Testimonial</h6>
+              <h6 className="p-0 ">Testimonial</h6>
               <h3 className="p-0 m-0">Our CLients Reviews</h3>
             </div>
           </div>

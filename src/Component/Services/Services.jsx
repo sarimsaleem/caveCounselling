@@ -46,7 +46,7 @@ const Services = () => {
                     <div className="row">
                         <div className="col-md-12 ">
                             <div className="services-heading heading-with-sub">
-                                <h6 className="p-0 m-0">My</h6>
+                                <h6 className="p-0 ">My</h6>
                                 <h3 className="p-0 m-0">Services</h3>
                                 <p>"How precious is the therapy space, where someone offers you their full undivided attention, truly listening to every word you share."</p>
                             </div>

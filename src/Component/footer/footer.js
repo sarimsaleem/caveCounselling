@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Row, Col, Typography } from 'antd';
-import Logo from '../../Assets/logo.png';
+import Logo from '../../Assets/mainfooter.png';
 import "./footer.css";
 import { FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
 import { Container } from 'react-bootstrap';
@@ -17,14 +17,14 @@ const Footer = () => {
                         {/* Left Column (CAVE EXPERTISE) */}
                         <Col xs={24} sm={12} md={12} lg={8}>
                             <Title level={4} style={{ color: 'var(--text-color)' }}>CAVE EXPERTISE & SERVICES</Title>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>Cave Mapping & Exploration</Text>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>Speleological Research</Text>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>Ecological Preservation</Text>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>Tourism Development</Text>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>Risk Assessment & Safety Protocols</Text>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>Geological Surveying</Text>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>Speleological Research</Text>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>Educational Workshops</Text>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>Cave Mapping & Exploration</Text>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>Speleological Research</Text>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>Ecological Preservation</Text>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>Tourism Development</Text>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>Risk Assessment & Safety Protocols</Text>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>Geological Surveying</Text>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>Speleological Research</Text>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>Educational Workshops</Text>
                         </Col>
 
                         {/* Center Column (Map) */}
@@ -42,14 +42,14 @@ const Footer = () => {
                         <Col xs={24} sm={12} md={7} lg={6}>
                             <Title level={4} style={{ color: 'var(--text-color)' }}>Contact Us</Title>
                             <Title level={5} style={{ color: 'var(--text-color)', marginBlock: "5px" }}>Head Office</Title>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>Wood street Walthamstow, east London.</Text>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>Wood street Walthamstow, east London.</Text>
                             <Title level={5} style={{ color: 'var(--text-color)', marginBlock: "5px" }}>Phone Number</Title>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>
-                                <a style={{ display: 'block', color: 'var(--them-color)' }} href="tel:+07777966289">T: 07777 966 289</a>
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>
+                                <a style={{ display: 'block', color: 'var(--text-color)' }} href="tel:+07777966289">T: 07777 966 289</a>
                             </Text>
                             <Title level={5} style={{ color: 'var(--text-color)', marginBlock: "5px" }}>Email Address</Title>
-                            <Text style={{ display: 'block', color: 'var(--them-color)' }}>
-                                <a style={{ display: 'block', color: 'var(--them-color)' }} className='link-footer' href="mailto:cavecounselling@outlook.com">
+                            <Text style={{ display: 'block', color: 'var(--text-color)' }}>
+                                <a style={{ display: 'block', color: 'var(--text-color)' }} className='link-footer' href="mailto:cavecounselling@outlook.com">
                                     cavecounselling@outlook.com
                                 </a>
                             </Text>

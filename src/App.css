@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+  font-family: "Halimun";
+  src: url(../src/Assets/halimun/Halimun.ttf);
+}
+
 .section-padding {
   padding-block: 70px;
 }
@@ -14,22 +19,20 @@ body {
 
 .heading-with-sub>h6 {
   font-size: 20px;
-  letter-spacing: 4px;
-  /* color: var(--them-secondary); */
+  /* letter-spacing: 4px; */
   margin-bottom: 15px;
-  text-transform: uppercase;
+  font-family: "halimun";
+  margin-bottom: 20px;
 }
 
 .heading-with-sub>h3 {
   font-size: 40px;
-  /* color: var(--them-secondary); */
   font-weight: 700;
 }
 
 .heading-with-sub>p {
   margin-top: 15px !important;
   font-size: 17px;
-  /* color: var(--them-secondary); */
 }
 
 @media (max-width: 768px) {

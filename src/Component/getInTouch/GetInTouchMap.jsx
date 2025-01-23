@@ -51,7 +51,7 @@ function GetInTouchMap() {
                     <div className="row">
                         <div className="col-md-12 col-xl-12 col-lg-12 col-sm-12">
                             <div className="contact-us-heading heading-with-sub">
-                                <h6 className="p-0 m-0">Get in Touch with Us</h6>
+                                <h6 className="p-0">Get in Touch with Us</h6>
                                 <h3 className="p-0 m-0">We're Always Eager To Hear From You!</h3>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ function GetInTouchMap() {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="contact-us-form-heading heading-with-sub">
-                                <h6 className="p-0 m-0">Get in touch with us</h6>
+                                <h6 className="p-0 ">Get in touch with us</h6>
                                 <h3 className="p-0 m-0">Fill The Form Below So We Can Get To Know You And Your Needs Better.</h3>
                             </div>
                         </div>
