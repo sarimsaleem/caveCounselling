@@ -1,5 +1,5 @@
-.services-main{
-background-color: beige;
+.services-main {
+    background-color: beige;
 }
 
 .service-card {
@@ -10,13 +10,11 @@ background-color: beige;
     background-repeat: no-repeat;
     height: 320px;
     padding: 20px;
-    /* box-shadow: 0 10px 30px rgba(186, 198, 176, 0.3); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    /* box-shadow: 0 15px 40px rgba(186, 198, 176, 0.4); */
 }
 
 .child-counselling {
@@ -24,13 +22,11 @@ background-color: beige;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* box-shadow: 0 10px 30px rgba(186, 198, 176, 0.3); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .child-counselling:hover {
     transform: translateY(-10px);
-    /* box-shadow: 0 15px 40px rgba(186, 198, 176, 0.4); */
 }
 
 .service-card-container {
@@ -62,7 +58,7 @@ background-color: beige;
 }
 
 .service-card-btn>button {
-    padding: 12px 25px;
+    padding: 12px 30px;
     background: var(--them-secondary) !important;
     color: var(--text-color);
     border: none;
@@ -115,7 +111,6 @@ background-color: beige;
 
 .modal-body p {
     font-size: 14px;
-    /* padding: 20px; */
 }
 
 .border-radius {

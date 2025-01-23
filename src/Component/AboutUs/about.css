@@ -1,5 +1,5 @@
-.about-main{
-background-color: var(--them-color);
+.about-main {
+    background-color: var(--them-color);
 }
 
 .about-main-content {
@@ -87,15 +87,10 @@ background-color: var(--them-color);
 @media (max-width: 768px) {
     .about-img img {
         width: 100%;
-        /* min-width: 300px; */
     }
 
     .about-img {
         margin-top: 20px;
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: center; */
-
         padding: 0px;
         box-shadow: none;
         background: none !important;

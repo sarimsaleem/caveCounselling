@@ -202,7 +202,6 @@ function GetInTouchMap() {
 
                                 </div>
                                 <div class="contact-btn ">
-                                    {/* <button type="submit" onClick={handleSubmit}>Submit</button> */}
                                     <button type="Submit" onClick={handleSubmit}>Send Your Message</button>
                                 </div>
                             </div>

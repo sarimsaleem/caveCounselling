@@ -19,7 +19,6 @@ body {
 
 .heading-with-sub>h6 {
   font-size: 20px;
-  /* letter-spacing: 4px; */
   margin-bottom: 15px;
   font-family: "halimun";
   margin-bottom: 20px;
@@ -61,8 +60,6 @@ body {
   --them-secondary: #5a5c47;
   --second-bg-color: #000;
   --text-color: #fff;
-  /* --second-color:#ccc; */
-  /* --main-color:#ff4d05; */
   --big-font: 55px;
   --h4-font: 16px;
   --h4-span-weig: 600;
@@ -72,5 +69,3 @@ body {
   --main-heading: 70px;
   --third-them-color: #254336;
 }
-
-;
