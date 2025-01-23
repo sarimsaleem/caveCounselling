@@ -2,10 +2,10 @@ import './hero.css'
 
 const HeroSection = () => {
     return (
-        <div className='hero-main' id='hero'>
+        <div className='hero-main' id='home'>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-6 col-sm-12 col-lg-6 col-xl-6">
+                    <div className="col-md-7 col-sm-12 col-lg-7 col-xl-7">
                         <div className="hero-content">
                             <div className="hero-content-heading">
                                 <h4 className='p-0 m-0'>Welcome to</h4>

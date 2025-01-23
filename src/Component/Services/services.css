@@ -1,9 +1,5 @@
 .services-main{
-/* background: var(--them-secondary); */
-}
-
-.services-heading{
-    /* color: var(--text-color); */
+background-color: beige;
 }
 
 .service-card {
@@ -14,13 +10,13 @@
     background-repeat: no-repeat;
     height: 320px;
     padding: 20px;
-    box-shadow: 0 10px 30px rgba(186, 198, 176, 0.3);
+    /* box-shadow: 0 10px 30px rgba(186, 198, 176, 0.3); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(186, 198, 176, 0.4);
+    /* box-shadow: 0 15px 40px rgba(186, 198, 176, 0.4); */
 }
 
 .child-counselling {
@@ -28,13 +24,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 0 10px 30px rgba(186, 198, 176, 0.3);
+    /* box-shadow: 0 10px 30px rgba(186, 198, 176, 0.3); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .child-counselling:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(186, 198, 176, 0.4);
+    /* box-shadow: 0 15px 40px rgba(186, 198, 176, 0.4); */
 }
 
 .service-card-container {

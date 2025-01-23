@@ -42,7 +42,6 @@ const Services = () => {
         <>
             <div className='services-main section-padding' id='services'>
                 <div className="container">
-
                     <div className="row">
                         <div className="col-md-12 ">
                             <div className="services-heading heading-with-sub">

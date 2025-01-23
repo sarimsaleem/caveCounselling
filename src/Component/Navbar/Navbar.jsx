@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import './navbar.css';
-import { useNavigate } from 'react-router-dom';
 import logo from '../../Assets/logo.png';
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,8 +26,10 @@ function Header() {
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <div className="navbar-logo" onClick={() => navigate('/')}>
-          <img src={logo} alt="Logo" />
+        <div className="navbar-logo" >
+          <a href="#home">
+            <img src={logo} alt="Logo" />
+          </a>
         </div>
         <button className="navbar-toggler" type="button" onClick={handleMenuClick} aria-controls="navbarNav" aria-expanded={menuOpen ? 'true' : 'false'} aria-label="Toggle navigation">
           <FaBars />
@@ -37,16 +37,16 @@ function Header() {
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className="nav-link"  onClick={() => navigate('/')}>Home</a>
+              <a className="nav-link" href='#home'>Home</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#services">My Services</a>
             </li>
             <li className="nav-item">
-            <a className="nav-link"  href='#about-us'>About Us</a>
+              <a className="nav-link" href='#about-us'>About Us</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link"  href="#faq">FAQ</a>
+              <a className="nav-link" href="#faq">FAQ</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href='#contact-us'>Contact Us</a>
