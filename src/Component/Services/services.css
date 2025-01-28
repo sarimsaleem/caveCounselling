@@ -1,95 +1,84 @@
 .services-main {
-    /* background-color: beige; */
+    background-color: beige;
+}
+.service-card{
+    background-image: url("../../Assets/adult.jpg");
+}
+.child-counselling{
+    background-image: url("../../Assets/child.jpg");
 }
 
-.service-card {
-    position: relative; 
+.service-card,
+.child-counselling {
+    position: relative;
     width: 100%;
-    background: url('./../../Assets/adult.jpg');
+    height: 320px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 320px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.service-card::before {
-    content: ""; 
-    position: absolute; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 0;
-}
-
-.service-card-content {
-    position: relative; 
-    color: aliceblue;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 1; 
-}
-
+.service-card,
 .child-counselling {
-    background: url('./../../Assets/child.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
 }
 
-.child-counselling::before {
-    content: ""; /* Required for pseudo-element */
-    position: absolute; /* Position it absolutely within the card */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    z-index: 0; /* Place it behind the content */
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-}
-
+.service-card:hover,
 .child-counselling:hover {
     transform: translateY(-10px);
 }
 
-.service-card-container {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+.service-card::before,
+.child-counselling::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
+.service-card-content {
+    position: relative;
+    z-index: 1;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
 
+.services-heading p {
+    font-weight: 400;
+    font-style: italic;
+}
 
 .service-card-content h4 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
-    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
 .service-card-btn {
     margin-top: 30px;
-    z-index: 1;
 }
 
-.service-card-btn>button {
+.service-card-btn > button {
     padding: 12px 30px;
     background: var(--them-secondary) !important;
     color: var(--text-color);
     border: none;
-    border-radius: 0px;
+    border-radius: 0;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -97,31 +86,24 @@
     transition: all 0.3s ease;
 }
 
-.service-card-btn>button:hover {
+.service-card-btn > button:hover {
     background: var(--them-color) !important;
     color: var(--second-bg-color) !important;
     transform: scale(1.05);
 }
 
-.modal-btn {
-    background-color: var(--them-secondary);
-    color: var(--text-color);
-}
-
-.modal-btn:hover {
-    background-color: var(--them-secondary);
-    color: var(--text-color);
-
+.service-card-container {
+    margin-top: 30px;
 }
 
 @media (max-width: 768px) {
     .service-card-container {
         flex-direction: column;
         align-items: center;
-
     }
 
-    .service-card {
+    .service-card,
+    .child-counselling {
         height: auto;
         min-height: 300px;
         margin-bottom: 20px;
@@ -130,16 +112,4 @@
     .service-card-content h4 {
         font-size: 28px;
     }
-}
-
-.modal-body {
-    padding: 20px;
-}
-
-.modal-body p {
-    font-size: 14px;
-}
-
-.border-radius {
-    border-radius: 0px;
 }

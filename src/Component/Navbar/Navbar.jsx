@@ -43,17 +43,18 @@ function Header() {
               <a className="nav-link" href="#services">My Services</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href='#about-us'>About Us</a>
+              <a className="nav-link" href='#about-us'>About Me</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#faq">FAQ</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href='#contact-us'>Contact Us</a>
+              <a className="nav-link" href='#contact-us'>Contact Me</a>
             </li>
           </ul>
           <div className="navbar-icons">
-            <button className="btn btn-outline-primary">Book Now</button>
+            <button className="btn btn-outline-primary">Book free
+            consultation</button>
           </div>
         </div>
       </div>

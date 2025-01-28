@@ -2,7 +2,7 @@ import React from 'react'
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram } from "react-icons/fa";
 import './GetInTouchMap.css'
 import { useFormik } from 'formik';
-
+import fees from "../../Assets/fees.jpg"
 function GetInTouchMap() {
 
 
@@ -51,8 +51,8 @@ function GetInTouchMap() {
                     <div className="row">
                         <div className="col-md-12 col-xl-12 col-lg-12 col-sm-12">
                             <div className="contact-us-heading heading-with-sub">
-                                <h6 className="p-0">Get in Touch with Us</h6>
-                                <h3 className="p-0 m-0">We're Always Eager To Hear From You!</h3>
+                                <h3 className="p-0">My Locations</h3>
+                                <h6 className="p-0 m-0">We're Always Eager To Hear From You!</h6>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ function GetInTouchMap() {
                             <div className="col-md-6 col-xl-8 col-lg-8 col-sm-12">
                                 <div className="map-section">
                                     <iframe
-                                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40803.235262064105!2d-0.26674749999999997!3d51.5287393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1698793256143!5m2!1sen!2s"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40803.235262064105!2d-0.26674749999999997!3d51.5287393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1698793256143!5m2!1sen!2s"
                                         style={{
                                             // border: "0",
                                             width: "100%", // Make the width responsive
@@ -96,13 +96,59 @@ function GetInTouchMap() {
                     </div>
                 </div>
             </div>
+
+            <div className="fees-availability">
+                <div className="container">
+                    <div className="row">
+                    <div className="col-sm-12 col-md-6 col-lg-6">
+                        <div className='fees-availability-img '>
+                            <img className='' src={fees} alt='About Us' />
+                        </div>
+                    </div>
+
+                        <div className='col-sm-12 col-md-6 col-lg-6'>
+                            <div className='about-content'>
+                                <div className="heading-with-sub about-heading">
+                                    <h3 className="p-0">Fees & Availability</h3>
+                                    <h6 className="p-0 m-0">Flexible Scheduling And Transparent Pricing Tailored For You.</h6>
+                                </div>
+                                <div className='about-para'>
+
+                                    <p style={{marginBottom:"10px"}}>If you or your child would like an in-person counselling session, I am based in in Walthamstow, east London. The closest train station is Wood street, and there is paid parking available on the side roads.</p>
+                                    
+                                    <p style={{marginBottom:"10px"}}>I also offer online sessions for those who don’t live in the area, can’t travel or simply don’t want to do in-person counselling and feel more comfortable online.
+                                    </p>
+
+                                    <p style={{marginBottom:"10px"}}><span className='para-bold'>Pricing & Session length : </span></p>
+
+                                    <p style={{marginBottom:"10px"}}>Individual Adult Counselling  (50 minutes) - £60 </p>
+
+                                    <p style={{marginBottom:"10px"}}>Child and Young person Counselling (50 minutes) - £60</p>
+
+                                    <p style={{marginBottom:"10px"}}>Please note I also have a limited number of slots for low-income clients and students, so please contact me to discuss this. (takes you to contact me page)</p>
+
+                                    <p style={{marginBottom:"10px"}}><span className='para-bold'>Appointments are currently available : </span></p>
+
+                                    <p style={{marginBottom:"10px"}}> In person sessions: Mondays, Tuesdays and Thursdays 12-4pm.</p>
+
+                                    <p style={{marginBottom:"10px"}}>Online and evening sessions are also available (contact me to discuss this. (takes you to contact me page)</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className='contact-us-form section-padding'>
                 <div className='container'>
                     <div className="row">
                         <div className="col-md-12">
                             <div className="contact-us-form-heading heading-with-sub">
-                                <h6 className="p-0 ">Get in touch with us</h6>
-                                <h3 className="p-0 m-0">Fill The Form Below So We Can Get To Know You And Your Needs Better.</h3>
+                                <h3 className="p-0 ">Get in touch with Me</h3>
+                                <h6 className="p-0 m-0">Fill The Form Below So We Can Get To Know You And Your Needs Better.</h6>
+                                <p>Feel free to contact me if you have any questions about how counselling works, or to arrange an initial assessment appointment.</p>
+                                <p>Booking an initial session of Counselling can often help in your decision about whether Counselling is right for you or your child. There is no obligation to continue after this initial session.</p>
                             </div>
                         </div>
                     </div>
@@ -129,7 +175,7 @@ function GetInTouchMap() {
                                             ) : null}
                                         </div>
                                         <div class="col-6 col-md-6 col-12 email">
-                                        <label className='contact-label' htmlFor="">Last Name</label>
+                                            <label className='contact-label' htmlFor="">Last Name</label>
                                             <input
                                                 type="name"
                                                 name='lastName'
@@ -151,7 +197,7 @@ function GetInTouchMap() {
                                 <div class="col-md-12">
                                     <div class="row">
                                         <div class="fst-lst col-md-6 col-12">
-                                        <label className='contact-label' htmlFor="">E-mail</label>
+                                            <label className='contact-label' htmlFor="">E-mail</label>
                                             <input
                                                 value={values.email}
                                                 onChange={handleChange}
@@ -166,7 +212,7 @@ function GetInTouchMap() {
                                             ) : null}
                                         </div>
                                         <div class="col-6 col-md-6 col-12 email">
-                                        <label className='contact-label' htmlFor="">Subject</label>
+                                            <label className='contact-label' htmlFor="">Subject</label>
                                             <input
                                                 value={values.select}
                                                 onChange={handleChange}
@@ -186,7 +232,7 @@ function GetInTouchMap() {
 
 
                                 <div class="text-section">
-                                <label className='contact-label' htmlFor="">Message</label>
+                                    <label className='contact-label' htmlFor="">Message</label>
                                     <textarea class="form-control"
                                         name='message'
                                         value={values.message}

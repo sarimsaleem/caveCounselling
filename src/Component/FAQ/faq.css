@@ -22,7 +22,7 @@
       padding: 0 0px 16px 0px;
       display: block;
       font-size: 15px;
-      color: #838383;
+      color: var(--second-bg-color);
     }
     .faq-heading{
       margin-bottom: 40px;

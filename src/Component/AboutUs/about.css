@@ -2,28 +2,8 @@
     background-color: var(--them-color);
 }
 
-.about-main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about-content {
     color: aliceblue;
-}
-
-.about-main-content h4 {
-    font-size: 30px;
-}
-
-.about-main-content h1 {
-    font-size: 70px;
-    padding-block: 30px !important;
-}
-
-.about-main-content p {
-    font-size: 20px;
-}
-
-.about-para {
-    font-size: 15px;
 }
 
 .about-heading {
@@ -40,10 +20,25 @@
 }
 
 .about-para {
-    padding-top: 30px !important;
+    padding-top: 20px !important;
     color: var(--second-bg-color);
-
+    font-size: 16px;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
 }
+
+.about-para p {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.about-para p.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
 
 .para-bold {
     font-weight: bold;
@@ -51,7 +46,6 @@
 }
 
 .about-img {
-    margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,40 +54,63 @@
 
 .about-img img {
     width: 100%;
-    max-height: 520px;
+    max-height: 500px;
     object-fit: contain;
+    border-radius: 10px;
+}
+
+.additional-content {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 2s ease, height 2s ease;
+}
+
+.additional-content.fade-in {
+    opacity: 1;
+    height: auto;
+}
+
+.additional-content.fade-out {
+    opacity: 0;
+    height: 0;
+}
+
+.read-more-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
     border: none;
-    border-radius: 0;
-    box-shadow: none;
+    background-color: var(--second-bg-color);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.ceo-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+/* 
+.read-more-btn:hover {
+    background-color: ;
+} */
+
+
+
+@media (max-width: 990px) {
+    .about-img {
+        margin-top: 40px;
+        padding: 0;
+    }
 }
 
-.ceo-img img {
-    width: 90px;
-    object-fit: contain;
-    border-radius: 50%;
-}
 
-.ceo-main h6 {
-    font-size: 17px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .about-img img {
         width: 100%;
     }
 
     .about-img {
-        margin-top: 20px;
+        margin-top: 40px;
         padding: 0px;
-        box-shadow: none;
-        background: none !important;
-        background-color: transparent !important;
     }
+
 }

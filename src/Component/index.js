@@ -11,6 +11,7 @@ import AboutMe from "./AboutMe/AboutMe";
 import Qualifications from "./Qualifications/Qualifications";
 import FAQ from "./FAQ/faq";
 import Services from "./Services/Services";
+import Values from "./Values/Values";
 
 
 
@@ -28,6 +29,7 @@ export {
     Footer,
     GetInTouchMap,
     FAQ,
+    Values,
     AboutMe,
     Qualifications,
     Services

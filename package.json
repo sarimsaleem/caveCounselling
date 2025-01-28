@@ -32,10 +32,9 @@
     "react-scripts": "^5.0.1",
     "resolve-url-loader": "^5.0.0",
     "sass-loader": "^16.0.3",
-    "swiper": "^11.1.15",
+    "swiper": "^11.2.1",
     "web-vitals": "^2.1.0",
     "yup": "^1.4.0"
-    
   },
   "scripts": {
     "start": "react-scripts start",

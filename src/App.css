@@ -21,17 +21,20 @@ body {
   font-size: 20px;
   margin-bottom: 15px;
   font-family: "halimun";
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  line-height: 2;
 }
 
 .heading-with-sub>h3 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .heading-with-sub>p {
-  margin-top: 15px !important;
+  margin-top: 10px !important;
   font-size: 17px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

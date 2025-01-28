@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 
 .testimonial{
+  background-color: rgb(176, 164, 145);
 }
 
 .swiper-container-main{
@@ -9,6 +10,10 @@
 .swiper-container {
   overflow: hidden;
   position: relative;
+}
+
+.testimonials-heading{
+  color: var(--text-color);
 }
 
 .swiper-slide {
@@ -29,10 +34,9 @@
 
 .ImgHolder {
   width: 100%;
-  background-color: beige;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
-  padding: 20px;
+  padding: 40px 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
@@ -54,19 +58,21 @@
 
 .ContentHolder {
   position: relative;
-  padding: 15px;
-  background-color: var(--text-color);
+  padding:50px 25px;
+  background-color: beige;
   text-align: center;
 }
 
 .ContentHolder h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  /* border-bottom: 2px solid black; */
+  margin-bottom: 20px;
 }
 
 .ContentHolder p {
-  font-size: 1rem;
+  font-size: 15px;
   color: #666;
   line-height: 1.4;
 }
@@ -103,6 +109,13 @@
   border: 1px solid var(--text-color);
 }
 
+.left-quote{
+  margin: 0 5px 15px 0;
+}
+
+.right-quote{
+margin: 15px 0 0px 5px;
+}
 @media (max-width: 638px) {
   .swiper-container {
     width: 100%;

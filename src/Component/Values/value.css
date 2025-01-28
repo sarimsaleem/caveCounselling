@@ -1,0 +1,31 @@
+.values{
+    background: var(--them-secondary);
+    /* padding: 60px 0; */
+}
+
+.values-heading{
+    color: white;
+
+}
+
+.values-swiper-slide{
+    background: transparent;
+    text-align: center;
+    padding: 30px 0px 0;
+    outline: none;
+    box-shadow: none !important;
+}
+
+  .values .values-swiper-slide h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .values .values-swiper-slide p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: white;
+  }
+  

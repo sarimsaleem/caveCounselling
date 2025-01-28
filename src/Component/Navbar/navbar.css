@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgba(255, 255, 255, 0.992) !important;
+    background-color: beige !important;
     color: rgb(0, 0, 0);
     z-index: 1000;
     transition: background-color 0.3s;
@@ -11,7 +11,7 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     box-shadow: 0 0 10px rgba(186, 198, 176, 0.1);
-    background-color: rgba(255, 255, 255, 0.85) !important;
+    background-color: beige !important;
 }
 
 .navbar-logo>h4>span {
@@ -35,13 +35,13 @@
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 2px solid var(--them-secondary);
+    border-bottom: 2px solid rgb(176, 164, 145);
     padding-bottom: 5px;
 }
 
 .navbar-icons .btn-outline-primary {
     padding: 12px 30px;
-    border: 1px solid var(--them-secondary) !important;
+    border: 1px solid rgb(176, 164, 145) !important;
     border-radius: 0;
     color: var(--them-secondary);
     cursor: pointer;
@@ -49,13 +49,13 @@
 }
 
 .navbar-icons .btn-outline-primary:hover {
-    background: var(--them-secondary) !important;
+    background: rgb(176, 164, 145) !important;
     color: var(--text-color);
     font-weight: 500;
 }
 
 .navbar.scrolled .navbar-icons .btn-outline-primary {
-    background-color: var(--them-secondary) !important;
+    background-color: rgb(176, 164, 145) !important;
     color: var(--text-color);
 }
 

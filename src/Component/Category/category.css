@@ -14,7 +14,7 @@
     width: auto;
     min-width: 180px;
     height: 300px !important;
-    background-color: var(--text-color);
+    background-color: rgb(176,164,145);
     text-align: center;
     cursor: pointer;
     height: 370px;
@@ -40,6 +40,7 @@
 
 .category-item>p {
     font-size: 16px;
+    color: var(--text-color);
 }
 
 .category-item>h2 {
