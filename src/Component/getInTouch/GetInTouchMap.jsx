@@ -156,8 +156,7 @@ function GetInTouchMap() {
                         <div className="row align-items-center justify-content-center">
                             <div className="col-md-12 col-sm-12 col-xl-8 col-lg-8">
                                 <div class="col-md-12">
-                                    <div class="row">
-
+                                    <div class="row" style={{marginBottom:"0px" }}>
                                         <div class="fst-lst col-md-6 col-12">
                                             <label className='contact-label' htmlFor="">First Name</label>
                                             <input type="name"
@@ -193,9 +192,8 @@ function GetInTouchMap() {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-md-12">
-                                    <div class="row">
+                                    <div class="row" style={{marginBottom:"0px" }} >
                                         <div class="fst-lst col-md-6 col-12">
                                             <label className='contact-label' htmlFor="">E-mail</label>
                                             <input
@@ -229,8 +227,6 @@ function GetInTouchMap() {
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div class="text-section">
                                     <label className='contact-label' htmlFor="">Message</label>
                                     <textarea class="form-control"
