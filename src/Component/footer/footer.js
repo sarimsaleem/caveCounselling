@@ -78,7 +78,7 @@ const Footer = () => {
                     <div className="sub-footer-content">
                         <div className="footer-text">
                             <Text style={{ color: 'var(--text-color)' }}>
-                                © {new Date().getFullYear()} Cave Consulting. All Rights Reserved.
+                                © {new Date().getFullYear()} Cave Counselling. All Rights Reserved.
                             </Text>
                         </div>
                         <div className="footer-logo">
