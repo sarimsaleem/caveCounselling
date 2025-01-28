@@ -29,10 +29,7 @@ function Header() {
 
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`} style={{ display: "flex", flexDirection: "column" }} >
-      <div className={`container nav-upper-text res-none ${scrolled ? 'ds-none' : ''}`}  style={{
-        display: "flex", justifyContent: "space-between", marginBottom: "15px",
-        paddingBottom: "15px", borderBottom: "1px solid #b0a491", paddingInline: "0px"
-      }}>
+      <div className={`container nav-upper-text res-none ${scrolled ? 'ds-none' : ''}`} >
         <p style={{ margin: "0", fontSize: "13px" }} >Integrative Counsellor for Children, Young people and Adults. Online, by phone and in-person in Walthamstow, East London</p>
         <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
           <FaPhone style={{ fontSize: "15px" ,color : '#5a6e56' }} />|

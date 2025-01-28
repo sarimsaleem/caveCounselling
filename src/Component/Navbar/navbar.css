@@ -6,7 +6,17 @@
     padding-bottom: 20px;
     padding-top: 20px;
 }
-.ds-none{
+
+.nav-upper-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #b0a491;
+    padding-inline: 0px;
+}
+
+.ds-none {
     display: none !important;
 }
 
@@ -69,10 +79,20 @@
 }
 
 
+@media (max-width: 575px) {
+
+    .navbar {
+        padding: 0 10px ;
+    }
+
+}
+
 @media (max-width: 768px) {
-    .res-none{
+
+    .res-none {
         display: none !important;
     }
+
     .navbar-logo>a>img {
         height: auto;
     }
@@ -119,10 +139,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .res-none{
+    .res-none {
         display: none !important;
     }
-    .nav-upper-text{
+
+    .nav-upper-text {
         display: none;
     }
 
