@@ -37,3 +37,11 @@
 .values .slick-dots {
   bottom: -40px; 
 }
+
+.values .slick-slide {
+  padding: 0 10px; /* Add horizontal spacing between slides */
+}
+
+.values .slick-slide > div {
+  padding: 10px; /* Add inner padding to the slide content for more spacing */
+}

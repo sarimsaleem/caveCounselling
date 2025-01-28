@@ -30,10 +30,14 @@ function Header() {
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`} style={{ display: "flex", flexDirection: "column" }} >
       <div className={`container nav-upper-text res-none ${scrolled ? 'ds-none' : ''}`} >
-        <p style={{ margin: "0", fontSize: "13px" }} >Integrative Counsellor for Children, Young people and Adults. Online, by phone and in-person in Walthamstow, East London</p>
-        <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
-          <FaPhone style={{ fontSize: "15px" ,color : '#5a6e56' }} />|
-          <IoIosMail style={{ fontSize: "21px"  ,color : '#5a6e56' }} />
+        <p className='nav-header-text'>Integrative Counsellor for Children, Young people and Adults. Online, by phone and in-person in Walthamstow, East London</p>
+        <div className='nav-icon-parent'>
+          <a href="tel:+447777966289">
+            <FaPhone className='nav-icons-header-phone'  />
+          </a>|
+          <a href="mailto:cavecounselling@outlook.com">
+            <IoIosMail className='nav-icons-header-mail'  />
+          </a>
         </div>
       </div>
       <div className="container" style={{ paddingInline: "0px" }}>

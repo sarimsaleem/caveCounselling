@@ -59,7 +59,7 @@ const Values = () => {
   };
 
   return (
-    <div className="values section-padding">
+    <div className="values">
       <div className="container-fluid">
         <div className="values-heading heading-with-sub">
         <h6 className="">What You Can Expect From Me</h6>

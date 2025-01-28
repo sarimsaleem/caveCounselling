@@ -1,25 +1,15 @@
 .hero-main {
-    position: relative;
     background-image: url(../../Assets/hero.jpg);
-    width: 100%;
     background-size: cover;
-    padding-block: 70px;
-    height: 750px;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hero-main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    padding-block: 70px;
+    min-height: 650px;
+    height: auto;
+    margin-top: 0;
+    /* Initially no margin */
 }
 
 .hero-container {
@@ -29,12 +19,10 @@
 
 .hero-content {
     display: flex;
-    margin-top: 90px;
-    align-items: start;
     flex-direction: column;
     position: relative;
-    z-index: 2;
-    color: var(--them-color)
+    color: var(--them-color);
+    max-width: 600px;
 }
 
 .hero-content-heading {
@@ -62,7 +50,6 @@
     font-size: 20px;
     color: var(--text-color);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-
 }
 
 .hero-img-container {
@@ -87,30 +74,20 @@
 }
 
 @media (max-width: 768px) {
-    .hero-img-container>img {
-        width: 100%;
+    .hero-main {
+        min-height: 600px;
+        /* Adjust for smaller screens */
     }
-    .hero-main{
-        height: 600px;
-    }
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
     .hero-img-container>img {
         width: 100%;
     }
 
     .hero-content-heading h1 {
-        font-size: 35px;
-        font-weight: 800;
-    }
-
-    .hero-content-heading h4 {
-        font-size: 14px;
+        font-size: 32px;
     }
 
     .hero-content>p {
-
         margin-top: 10px !important;
         font-size: 14px;
     }
@@ -119,17 +96,14 @@
         padding: 10px 20px;
         font-weight: 600;
         font-size: 14px;
-        border: none;
-        color: aliceblue;
-        background-color: var(--them-secondary);
-        cursor: pointer;
+        background-color:beige ;
+        color: var(--second-bg-color);
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .hero-content-heading h1 {
-        font-size: 32px;
-        font-weight: 800;
+        font-size: 35px;
     }
 
     .hero-content-heading h4 {
@@ -141,7 +115,11 @@
         font-size: 14px;
     }
 
-    .hero-img-container>img {
-        width: 100%;
+    .hero-content-btn>button {
+        padding: 10px 20px;
+        font-weight: 600;
+        font-size: 14px;
+        background-color: var(--them-secondary);
+        color: aliceblue;
     }
 }

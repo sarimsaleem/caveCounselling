@@ -13,34 +13,15 @@ function GetInTouchMap() {
         { title: "Instagram", address: "cavecounselling", icon: <FaInstagram /> },
     ];
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
 
-    const initialValues = {
-        name: "",
-        lastName: "",
-        email: "",
-        message: "",
-        select: ""
-    };
+        if (form.checkValidity()) {
 
-    const { values, errors, touched, handleChange, handleSubmit, setFieldTouched } = useFormik({
-        initialValues: initialValues,
-        // validationSchema: InquirySchema,
-        onSubmit: (values, action) => {
-
-            const emailBody = `
-              Name: ${values.name} ${values.lastName}
-              Email: ${values.email}
-              select: ${values.select}
-              Message: ${values.message}
-      `;
-
-            const mailtoLink = `mailto:info@slcedu.com?subject=Inquiry&body=${encodeURIComponent(emailBody)}`;
-
-            window.location.href = mailtoLink;
-
-            action.resetForm()
-        },
-    });
+            form.reset();
+        }
+    }
 
 
     return (
@@ -100,11 +81,11 @@ function GetInTouchMap() {
             <div className="fees-availability section-padding">
                 <div className="container">
                     <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-6">
-                        <div className='fees-availability-img '>
-                            <img className='' src={fees} alt='About Us' />
+                        <div className="col-sm-12 col-md-12 col-lg-6">
+                            <div className='fees-availability-img '>
+                                <img className='' src={fees} alt='About Us' />
+                            </div>
                         </div>
-                    </div>
 
                         <div className='col-sm-12 col-md-12 col-lg-6'>
                             <div className='fees-availability-content'>
@@ -114,24 +95,24 @@ function GetInTouchMap() {
                                 </div>
                                 <div className='about-para'>
 
-                                    <p style={{marginBottom:"10px"}}>If you or your child would like an in-person counselling session, I am based in in Walthamstow, east London. The closest train station is Wood street, and there is paid parking available on the side roads.</p>
-                                    
-                                    <p style={{marginBottom:"10px"}}>I also offer online sessions for those who don’t live in the area, can’t travel or simply don’t want to do in-person counselling and feel more comfortable online.
+                                    <p style={{ marginBottom: "10px" }}>If you or your child would like an in-person counselling session, I am based in in Walthamstow, east London. The closest train station is Wood street, and there is paid parking available on the side roads.</p>
+
+                                    <p style={{ marginBottom: "10px" }}>I also offer online sessions for those who don’t live in the area, can’t travel or simply don’t want to do in-person counselling and feel more comfortable online.
                                     </p>
 
-                                    <p style={{marginBottom:"10px"}}><span className='para-bold'>Pricing & Session length : </span></p>
+                                    <p style={{ marginBottom: "10px" }}><span className='para-bold'>Pricing & Session length : </span></p>
 
-                                    <p style={{marginBottom:"10px"}}>Individual Adult Counselling  (50 minutes) - £60 </p>
+                                    <p style={{ marginBottom: "10px" }}>Individual Adult Counselling  (50 minutes) - £60 </p>
 
-                                    <p style={{marginBottom:"10px"}}>Child and Young person Counselling (50 minutes) - £60</p>
+                                    <p style={{ marginBottom: "10px" }}>Child and Young person Counselling (50 minutes) - £60</p>
 
-                                    <p style={{marginBottom:"10px"}}>Please note I also have a limited number of slots for low-income clients and students, so please contact me to discuss this. (takes you to contact me page)</p>
+                                    <p style={{ marginBottom: "10px" }}>Please note I also have a limited number of slots for low-income clients and students, so please contact me to discuss this. (takes you to contact me page)</p>
 
-                                    <p style={{marginBottom:"10px"}}><span className='para-bold'>Appointments are currently available : </span></p>
+                                    <p style={{ marginBottom: "10px" }}><span className='para-bold'>Appointments are currently available : </span></p>
 
-                                    <p style={{marginBottom:"10px"}}> In person sessions: Mondays, Tuesdays and Thursdays 12-4pm.</p>
+                                    <p style={{ marginBottom: "10px" }}> In person sessions: Mondays, Tuesdays and Thursdays 12-4pm.</p>
 
-                                    <p style={{marginBottom:"10px"}}>Online and evening sessions are also available (contact me to discuss this. (takes you to contact me page)</p>
+                                    <p style={{ marginBottom: "10px" }}>Online and evening sessions are also available (contact me to discuss this. (takes you to contact me page)</p>
 
                                 </div>
                             </div>
@@ -155,102 +136,73 @@ function GetInTouchMap() {
                     <div className='contact-us-form-container'>
                         <div className="row align-items-center justify-content-center">
                             <div className="col-md-12 col-sm-12 col-xl-8 col-lg-8">
-                                <div class="col-md-12">
-                                    <div class="row" style={{marginBottom:"0px" }}>
-                                        <div class="fst-lst col-md-6 col-12">
-                                            <label className='contact-label' htmlFor="">First Name</label>
-                                            <input type="name"
-                                                name='name'
-                                                class="form-control"
-                                                id="John"
-                                                value={values.name}
-                                                onChange={handleChange}
-                                                onBlur={() => setFieldTouched('name', true, true)}
-                                                placeholder="john *" />
-                                            {errors.name && touched.name ? (
-                                                <p className="p_msg">
-                                                    {errors.name}
-                                                </p>
-                                            ) : null}
-                                        </div>
-                                        <div class="col-6 col-md-6 col-12 email">
-                                            <label className='contact-label' htmlFor="">Last Name</label>
-                                            <input
-                                                type="name"
-                                                name='lastName'
-                                                value={values.lastName}
-                                                onChange={handleChange}
-                                                onBlur={() => setFieldTouched('lastName', true, true)}
-                                                class="form-control"
-                                                id="exampleFormControlInput1"
-                                                placeholder="doe *" />
-                                            {errors.lastName && touched.lastName ? (
-                                                <p className="p_msg">
-                                                    {errors.lastName}
-                                                </p>
-                                            ) : null}
+                                <form id="contactForm" onsubmit="handleSubmit(event)">
+                                    <div className="col-md-12">
+                                        <div className="row" style={{ marginBottom: "0px" }}>
+                                            <div className="fst-lst col-md-6 col-12">
+                                                <label className='contact-label' htmlFor="">First Name</label>
+                                                <input type="text"
+                                                    name='name'
+                                                    className="form-control"
+                                                    id="John"
+                                                    placeholder="john *"
+                                                    required />
+                                            </div>
+                                            <div className="col-6 col-md-6 col-12 email">
+                                                <label className='contact-label' htmlFor="">Last Name</label>
+                                                <input
+                                                    type="text"
+                                                    name='lastName'
+                                                    className="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="doe *"
+                                                    required />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="row" style={{marginBottom:"0px" }} >
-                                        <div class="fst-lst col-md-6 col-12">
-                                            <label className='contact-label' htmlFor="">E-mail</label>
-                                            <input
-                                                value={values.email}
-                                                onChange={handleChange}
-                                                onBlur={() => setFieldTouched('email', true, true)}
-                                                name='email'
-                                                type="email"
-                                                class="form-control"
-                                                id="exampleFormControlInput1"
-                                                placeholder="example@example.com *" />
-                                            {errors.email && touched.email ? (
-                                                <p className='p_msg'>{errors.email}</p>
-                                            ) : null}
-                                        </div>
-                                        <div class="col-6 col-md-6 col-12 email">
-                                            <label className='contact-label' htmlFor="">Subject</label>
-                                            <input
-                                                value={values.select}
-                                                onChange={handleChange}
-                                                onBlur={() => setFieldTouched('select', true, true)}
-                                                name='select'
-                                                type="text"
-                                                class="form-control"
-                                                id="exampleFormControlInput1"
-                                                placeholder="your subject *" />
-                                            {errors.select && touched.select ? (
-                                                <p className='p_msg'>{errors.select}</p>
-                                            ) : null}
-
+                                    <div className="col-md-12">
+                                        <div className="row" style={{ marginBottom: "0px" }}>
+                                            <div className="fst-lst col-md-6 col-12">
+                                                <label className='contact-label' htmlFor="">E-mail</label>
+                                                <input
+                                                    name='email'
+                                                    type="email"
+                                                    className="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="example@example.com *"
+                                                    required />
+                                            </div>
+                                            <div className="col-6 col-md-6 col-12 email">
+                                                <label className='contact-label' htmlFor="">Subject</label>
+                                                <input
+                                                    name='select'
+                                                    type="text"
+                                                    className="form-control"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="your subject *"
+                                                    required />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="text-section">
-                                    <label className='contact-label' htmlFor="">Message</label>
-                                    <textarea class="form-control"
-                                        name='message'
-                                        value={values.message}
-                                        onChange={handleChange}
-                                        onBlur={() => setFieldTouched('message', true, true)}
-                                        placeholder="message..."
-                                        id="exampleFormControlTextarea1" rows="8"></textarea>
-                                    {errors.message && touched.message ? (
-                                        <p className='p_msg msg'>
-                                            {errors.message}
-                                        </p>
-                                    ) : null}
-
-                                </div>
-                                <div class="contact-btn ">
-                                    <button type="Submit" onClick={handleSubmit}>Send Your Message</button>
-                                </div>
+                                    <div className="text-section">
+                                        <label className='contact-label' htmlFor="">Message</label>
+                                        <textarea className="form-control"
+                                            name='message'
+                                            placeholder="message..."
+                                            id="exampleFormControlTextarea1" rows="8"
+                                            required></textarea>
+                                    </div>
+                                    <div className="contact-btn">
+                                        <button type="submit">Send Your Message</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </>
     )
 }
