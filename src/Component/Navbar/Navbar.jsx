@@ -4,6 +4,8 @@ import './navbar.css';
 import logo from '../../Assets/logo.png';
 import { Link } from 'react-scroll';
 import { HashLink } from 'react-router-hash-link';
+import { IoIosMail } from "react-icons/io";
+import { FaPhone } from "react-icons/fa6";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,8 +28,18 @@ function Header() {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container">
+    <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`} style={{ display: "flex", flexDirection: "column" }} >
+      <div className={`container nav-upper-text res-none ${scrolled ? 'ds-none' : ''}`}  style={{
+        display: "flex", justifyContent: "space-between", marginBottom: "15px",
+        paddingBottom: "15px", borderBottom: "1px solid #b0a491", paddingInline: "0px"
+      }}>
+        <p style={{ margin: "0", fontSize: "13px" }} >Integrative Counsellor for Children, Young people and Adults. Online, by phone and in-person in Walthamstow, East London</p>
+        <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
+          <FaPhone style={{ fontSize: "15px" ,color : '#5a6e56' }} />|
+          <IoIosMail style={{ fontSize: "21px"  ,color : '#5a6e56' }} />
+        </div>
+      </div>
+      <div className="container" style={{ paddingInline: "0px" }}>
         <div className="navbar-logo" >
           <Link className="nav-link" to="home"  >
             <img src={logo} alt="Logo" />
@@ -55,7 +67,7 @@ function Header() {
             </li>
           </ul>
           <div className="navbar-icons">
-            <button className="btn btn-outline-primary">Book free consultation</button>
+            <button className="btn btn-outline-primary">Book Free Consultation</button>
           </div>
         </div>
       </div>

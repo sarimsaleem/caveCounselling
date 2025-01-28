@@ -23,9 +23,11 @@ const Counselling = () => {
                         <img src={image} alt={title} className='img-fluid' />
                     </div>
                     <div className='col-md-6'>
+                        <div className="counselling-description">
                         {Array.isArray(description) && description.map((item, index) => (
                             <p className='counselling-para' key={index}>{item}</p>
                         ))}
+                        </div>
                     </div>
 
                 </div>

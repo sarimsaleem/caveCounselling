@@ -97,17 +97,17 @@ function GetInTouchMap() {
                 </div>
             </div>
 
-            <div className="fees-availability">
+            <div className="fees-availability section-padding">
                 <div className="container">
                     <div className="row">
-                    <div className="col-sm-12 col-md-6 col-lg-6">
+                    <div className="col-sm-12 col-md-12 col-lg-6">
                         <div className='fees-availability-img '>
                             <img className='' src={fees} alt='About Us' />
                         </div>
                     </div>
 
-                        <div className='col-sm-12 col-md-6 col-lg-6'>
-                            <div className='about-content'>
+                        <div className='col-sm-12 col-md-12 col-lg-6'>
+                            <div className='fees-availability-content'>
                                 <div className="heading-with-sub about-heading">
                                     <h3 className="p-0">Fees & Availability</h3>
                                     <h6 className="p-0 m-0">Flexible Scheduling And Transparent Pricing Tailored For You.</h6>
@@ -145,7 +145,7 @@ function GetInTouchMap() {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="contact-us-form-heading heading-with-sub">
-                                <h3 className="p-0 ">Get in touch with Me</h3>
+                                <h3 className="p-0 ">Get In Touch With Me</h3>
                                 <h6 className="p-0 m-0">Fill The Form Below So We Can Get To Know You And Your Needs Better.</h6>
                                 <p>Feel free to contact me if you have any questions about how counselling works, or to arrange an initial assessment appointment.</p>
                                 <p>Booking an initial session of Counselling can often help in your decision about whether Counselling is right for you or your child. There is no obligation to continue after this initial session.</p>

@@ -1,5 +1,5 @@
 .counselling-page {
-    padding-top: 140px;
+    padding-top: 190px;
     padding-bottom: 50px; 
     /* background-color: rgb(176, 164, 145);  */
     background-color: var(--them-color); 
@@ -26,14 +26,20 @@
     color: #555;
 }
 
-.section-padding {
-    padding: 60px 15px;
-}
-
 .row {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .counselling-para:last-child{
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .counselling-description{
+        margin-top: 50px;
+    }
+
+    .counselling-page{
+        padding-top: 140px;
+    }
+}   

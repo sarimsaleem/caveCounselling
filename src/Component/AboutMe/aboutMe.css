@@ -23,7 +23,6 @@
 
 .msg-img>img {
     width: 100%;
-    /* border-radius: 50%; */
     height: 550px;
 }
 
@@ -46,25 +45,36 @@
 }
 
 .about-btn {
-    padding: 10px 35px;
+    padding: 12px 30px;
     background-color: var(--them-color);
     color: var(--second-bg-color);
     border: none;
 }
 
 @media (max-width: 991px) {
+
 .msg-img{
     margin-bottom: 50px;
 }
+.msg-img img{
+    max-height: 400px;
+}
+
 }
 
 @media (max-width: 768px) {
+
+    .msg-img img{
+        max-height: 400px;
+    }
+
     .about-us-msg-row {
         flex-direction: column-reverse !important;
     }
 
     .msg-img {
-        margin-top: 10px;
+        margin-top: 50px;
+        max-height:400px ;
     }
 
     .wrapper-heading>h4 {

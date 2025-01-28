@@ -117,7 +117,17 @@
   margin-top: 25px;
 }
 
+@media (max-width: 991px) {
+  .fees-availability-content{
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 768px) {
+
+  .fees-availability-content{
+    margin-top: 50px;
+  }
 
   .contact-container {
     flex-direction: row;
@@ -144,9 +154,13 @@
   .contact-btn>button {
     padding: 15px 25px;
     font-size: 18px;
-    background-color: var(--them-color);
+    background-color: var(--them-secondary);
     color: aliceblue;
     border: none;
+  }
+
+  .fees-availability-img img {
+    height: 400px;
   }
 }
 

@@ -4,8 +4,9 @@ import Logo from '../../Assets/mainfooter.png';
 import "./footer.css";
 import { FacebookOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
 import { Container } from 'react-bootstrap';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa6';
 
-const { Title, Text } = Typography; 
+const { Title, Text } = Typography;
 
 const Footer = () => {
     return (
@@ -63,10 +64,10 @@ const Footer = () => {
                             <a href="#">FAQ</a>
                             <a href="#">Contact</a>
                         </div>
-                        <div className="footer-icons">
-                            <a href="#" className="icon facebook"><FacebookOutlined /></a>
-                            <a href="#" className="icon instagram"><InstagramOutlined /></a>
-                            <a href="#" className="icon linkedin"><LinkedinOutlined /></a>
+                        <div className='footer-icons'>
+                            <a href="#" className="icon linkedin"> <i><FaInstagram size={30} /></i></a>
+                            <a href="#" className="icon linkedin"> <i><FaFacebook size={30} /></i></a>
+                            <a href="#" className="icon linkedin"> <i><FaLinkedin size={30} /></i></a>
                         </div>
                     </div>
                 </Container>

@@ -1,10 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import "./value.css";
+import { Navigation } from 'swiper/modules';
 
 const Values = () => {
+  
   const slides = [
     { heading: 'Professionalism', text: 'As a member of BACP, I am committed to providing a high-quality professional service and abide by their ethical framework to ensure integrity, respect and competence in my work.' },
     { heading: 'Confidentiality', text: 'I have a legal and ethical responsibility to protect my clients confidentiality, I strongly follow the confidentiality agreement as stated in our contract. Please see my privacy policy for more details.' },
@@ -22,9 +23,9 @@ const Values = () => {
         </div>
         <Swiper
           slidesPerView={1}
-          spaceBetween={30}
-          pagination={{ clickable: true }}
-          modules={[Pagination]}
+          spaceBetween={50}
+          navigation={true}
+          modules={[Navigation]}
           loop={true}
           autoplay={{
             delay: 3000,
@@ -46,7 +47,7 @@ const Values = () => {
           {slides.map((slide, index) => (
             <SwiperSlide key={index} className="values-swiper-slide">
               <h2 className="">{slide.heading}</h2>
-              <p className="">{slide.text}</p>
+              <p className="" style={{margin: "0"}}>{slide.text}</p>
             </SwiperSlide>
           ))}
         </Swiper>
