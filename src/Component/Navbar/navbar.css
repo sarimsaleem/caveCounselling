@@ -51,7 +51,6 @@
 .navbar-icons .btn-outline-primary:hover {
     background: rgb(176, 164, 145) !important;
     color: var(--text-color);
-    font-weight: 500;
 }
 
 .navbar.scrolled .navbar-icons .btn-outline-primary {
