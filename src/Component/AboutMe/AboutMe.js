@@ -27,7 +27,7 @@ function AboutMe() {
                                 <p>Whether you are seeking support for yourself or a loved one, I’m here to offer a warm, empathic and culturally sensitive space where you feel truly heard.</p>
                             </div>
                             <div className='about-btn-cont'>
-                            <button type="Submit" className='about-btn' >More About Me</button>
+                                <button type="Submit" className='about-btn' >More About Me</button>
                             </div>
                         </div>
                     </div>

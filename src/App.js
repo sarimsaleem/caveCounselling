@@ -14,6 +14,7 @@ function App() {
       <Suspense fallback={<Cloader />}>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='*' element={<Home />} />
           <Route path='/counselling' element={<Counselling />} />
         </Routes>
       </Suspense>
