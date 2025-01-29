@@ -3,13 +3,18 @@ import './about.css';
 import about from './../../Assets/aboutimg.png';
 
 function AboutUs() {
-    const [isExpanded, setIsExpanded] = useState(false);
     const sectionRef = useRef(null);
 
     const handleToggle = () => {
-        setIsExpanded(!isExpanded);
+        const extraContent = document.getElementById('extra-content');
+        const toggleBtn = document.getElementById('toggle-btn');
 
-        if (isExpanded) {
+        if (extraContent.style.display === 'none' || extraContent.style.display === '') {
+            extraContent.style.display = 'block';
+            toggleBtn.innerText = 'Read Less';
+        } else {
+            extraContent.style.display = 'none';
+            toggleBtn.innerText = 'Read More';
             sectionRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
@@ -32,36 +37,36 @@ function AboutUs() {
                                 <p>
                                     I am a qualified BACP Integrative Counsellor, trained in a range of therapeutic approaches, allowing me to tailor each session to meet your unique needs. My work draws on modalities such as person-centred therapy, attachment theory, systemic approaches, CBT, and psychodynamic therapy. Always keeping your needs at the forefront.
                                 </p>
-                                {isExpanded && (
-                                    <>
-                                        <p><span className='para-bold'>Experience and Approach : </span> With over a decade of experience in the charity sector, youth helplines, family support, mentoring, and education, I have worked with individuals from diverse backgrounds, cultures, and religions. This breadth of experience has given me valuable insight into the challenges people face and how to support them with understanding and empathy.
-                                        </p>
-                                        <p><span className='para-bold'>Working with Children and Young People : </span> In my role as a school counsellor, I take a whole-school approach to mental health, working closely with staff and parents to best support the child’s emotional well-being. My work includes individual and group therapy, solution-focused drop-ins, adolescent CBT, and crisis counselling. At the core of my practice is a commitment to building trusting, empathetic relationships and providing children with a safe, confidential space to explore their emotions.
-                                        </p>
-                                        <p><span className='para-bold'>My Practice : </span>
-                                            Currently, I divide my time between working as a school counsellor in both primary and secondary settings, providing online counselling for a children’s mental health charity and an adult counselling service, as well as supporting clients in my private practice.
-                                        </p>
-                                        <p><span className='para-bold'>Qualifications : </span></p>
-                                        <ul>
-                                            <li>I am a member of the British Association of Counselling and Psychotherapy (BACP) and adhere to their ethical framework of good practice.</li>
-                                            <li>I hold an enhanced DBS and have professional indemnity insurance.</li>
-                                            <li>Diploma in Integrative Counselling specialising in children and young people.</li>
-                                            <li>BSc Psychology.</li>
-                                            <li>Online and Telephone counselling Certificate.</li>
-                                            <li>Trauma informed Practitioner.</li>
-                                            <li>Certificate in Bereavement counselling.</li>
-                                            <li>Level 2 advanced Safeguarding Adults and Children.</li>
-                                            <li>Level 2 Adult counselling.</li>
-                                        </ul>
+                                <div id="extra-content" style={{ display: 'none' }}>
 
-                                        <p>In addition to my training, I am committed to continuous personal and professional development.</p>
-                                    </>
-                                )}
+                                    <p><span className='para-bold'>Experience and Approach : </span> With over a decade of experience in the charity sector, youth helplines, family support, mentoring, and education, I have worked with individuals from diverse backgrounds, cultures, and religions. This breadth of experience has given me valuable insight into the challenges people face and how to support them with understanding and empathy.
+                                    </p>
+                                    <p><span className='para-bold'>Working with Children and Young People : </span> In my role as a school counsellor, I take a whole-school approach to mental health, working closely with staff and parents to best support the child’s emotional well-being. My work includes individual and group therapy, solution-focused drop-ins, adolescent CBT, and crisis counselling. At the core of my practice is a commitment to building trusting, empathetic relationships and providing children with a safe, confidential space to explore their emotions.
+                                    </p>
+                                    <p><span className='para-bold'>My Practice : </span>
+                                        Currently, I divide my time between working as a school counsellor in both primary and secondary settings, providing online counselling for a children’s mental health charity and an adult counselling service, as well as supporting clients in my private practice.
+                                    </p>
+                                    <p><span className='para-bold'>Qualifications : </span></p>
+                                    <ul>
+                                        <li>I am a member of the British Association of Counselling and Psychotherapy (BACP) and adhere to their ethical framework of good practice.</li>
+                                        <li>I hold an enhanced DBS and have professional indemnity insurance.</li>
+                                        <li>Diploma in Integrative Counselling specialising in children and young people.</li>
+                                        <li>BSc Psychology.</li>
+                                        <li>Online and Telephone counselling Certificate.</li>
+                                        <li>Trauma informed Practitioner.</li>
+                                        <li>Certificate in Bereavement counselling.</li>
+                                        <li>Level 2 advanced Safeguarding Adults and Children.</li>
+                                        <li>Level 2 Adult counselling.</li>
+                                    </ul>
+
+                                    <p>In addition to my training, I am committed to continuous personal and professional development.</p>
+                                </div>
                                 <button
+                                    id='toggle-btn'
                                     className='read-more-btn'
                                     onClick={handleToggle}
                                 >
-                                    {isExpanded ? 'Read Less' : 'Read More'}
+                                    Read More
                                 </button>
                             </div>
                         </div>

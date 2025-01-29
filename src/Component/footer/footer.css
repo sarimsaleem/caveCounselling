@@ -46,6 +46,10 @@
   font-size: 30px;
 }
 
+.footer-logo img {
+  width: 40px;
+}
+
 @media (max-width: 650px) {
   .footer-links {
     gap: 5px;
@@ -62,12 +66,22 @@
   }
   .sub-footer-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+        justify-content: space-between;
+        align-items: center;
   }
   .footer-text > span{
       font-size: 9px;
   }
+
+  .footer-text p{
+    font-size: 12px;
+    text-align: start;
+  }
+
+  .footer-logo img {
+    width: 24px;
+  }
+
 }
 
 @media (max-width: 1199px) {
@@ -105,10 +119,6 @@
 
 .footer-text {
   text-align: right;
-}
-
-.footer-logo img {
-  width: 34px;
 }
 
 .link-footer{
