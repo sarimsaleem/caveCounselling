@@ -53,20 +53,32 @@
 
 @media (max-width: 991px) {
 
-.msg-img{
-    margin-bottom: 50px;
-}
-.msg-img img{
-    max-height: 400px;
+    .msg-img {
+        margin-bottom: 50px;
+    }
+
+    .msg-img img {
+        max-height: 400px;
+    }
 }
 
+@media (max-width: 556px) {
+    .msg-img img {
+        max-height: 326px;
+    }
 }
+
+
+@media (min-width: 557px) and (max-width:767px) {
+    .msg-img img {
+        max-height: 400px;
+    }
+}
+
 
 @media (max-width: 768px) {
 
-    .msg-img img{
-        max-height: 400px;
-    }
+    
 
     .about-us-msg-row {
         flex-direction: column-reverse !important;
@@ -74,7 +86,7 @@
 
     .msg-img {
         margin-top: 50px;
-        max-height:400px ;
+        max-height: 400px;
     }
 
     .wrapper-heading>h4 {
