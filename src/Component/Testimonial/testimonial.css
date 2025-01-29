@@ -10,6 +10,8 @@
 .swiper-container {
   overflow: hidden;
   position: relative;
+  width: 100%;
+  
 }
 
 .testimonials-heading{
@@ -121,11 +123,6 @@ margin: 15px 0 0px 5px;
   }
 }
 
-@media (max-width: 500px) {
-  .swiper-container {
-    width: 90vw;
-  }
-}
 
 @media (max-width: 300px) {
   .swiper-container {
