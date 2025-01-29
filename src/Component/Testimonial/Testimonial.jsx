@@ -72,11 +72,7 @@ const Testimonials = () => {
                 >
                   {testimonialData.map((item, index) => (
                     <SwiperSlide key={index} className="swiper-slide">
-                      {/* <div className="ImgHolder"> */}
-                      {/* <img src={item.avatar} alt={item.name} /> */}
-                      {/* </div> */}
                       <div className="ContentHolder">
-
                         <h3>{item.name}</h3>
                         <p><RiDoubleQuotesL className='left-quote' />
                           {item.review}<RiDoubleQuotesR className='right-quote' />

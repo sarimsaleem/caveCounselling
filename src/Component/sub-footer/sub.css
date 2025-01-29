@@ -37,6 +37,9 @@
     color: var(--second-bg-color);
     transition: all 0.4s;
 }
+.sub-link{
+    text-align: center;
+}
 
 .sub-link>h4>span {
     border-bottom: 1px solid var(--second-bg-color);
