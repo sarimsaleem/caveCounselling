@@ -1,5 +1,6 @@
 .about-us-msg {
     background: var(--them-secondary);
+    padding: 50px 0;
 }
 
 .msg-heading {
@@ -21,27 +22,61 @@
     color: var(--text-color);
 }
 
+.msg-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .msg-img>img {
     width: 100%;
-    height: 550px;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 
-.msg-img-content {
-    margin-top: 20px;
+@media (max-width: 767px) {
+
+
+    .msg-img {
+        height: 100%;
+    }
+
+    .msg-img>img {
+        object-fit: cover;
+    }
+
+    .msg-container {
+        margin-top: 40px;
+    }
 }
 
-.msg-img-content>h6 {
-    font-size: 25px;
-    color: var(--them-color);
-    font-weight: 500;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--them-color);
+@media (min-width: 768px) and (max-width: 991px) {
+    .msg-img {
+        height: 100%;
+    }
+
+    .msg-img>img {
+        object-fit: cover;
+    }
+    
+    .msg-container {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .msg-img {
+        height: 100%;
+    }
+
+    .msg-img>img {
+        object-fit: cover;
+    }
 }
 
 .about-btn-cont {
-    display: flex;
-    /* justify-content: center; */
     margin-top: 30px;
 }
 
@@ -50,52 +85,11 @@
     background-color: var(--them-color);
     color: var(--second-bg-color);
     border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 556px) {
-    .msg-img img {
-        max-height: 326px;
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 557px) and (max-width:767px) {
-    .msg-img img {
-        max-height: 400px;
-    }
-}
-
-
-@media (max-width: 768px) {
-
-
-
-    .about-us-msg-row {
-        flex-direction: column-reverse !important;
-    }
-
-    .msg-img {
-        margin-top: 50px;
-        max-height: 400px;
-    }
-
-    .wrapper-heading>h4 {
-        font-size: 35px;
-        font-weight: 700;
-        margin-bottom: 20px !important;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-}
-
-@media (max-width: 991px) {
-
-    .msg-img {
-        margin-bottom: 50px;
-    }
-
-    .msg-img img {
-        max-height: 400px;
-    }
+.about-btn:hover {
+    background-color: var(--them-secondary);
+    color: var(--them-color);
 }
