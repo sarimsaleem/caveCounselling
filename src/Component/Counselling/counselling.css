@@ -1,8 +1,8 @@
 .counselling-page {
     padding-top: 190px;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
     /* background-color: rgb(176, 164, 145);  */
-    background-color: var(--them-color); 
+    background-color: var(--them-color);
 }
 
 .page-title {
@@ -30,22 +30,30 @@
     /* margin-bottom: 20px; */
 }
 
-.counselling-para:last-child{
+.counselling-para:last-child {
     margin: 0;
 }
 
-@media (min-width: 991px) and (max-width: 1200px){
-
-    .counselling-page{
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+    .counselling-page {
         padding-top: 200px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .counselling-description {
+        margin-top: 50px;
+    }
+}
+
+
 @media (max-width: 768px) {
-    .counselling-description{
+    .counselling-description {
         margin-top: 50px;
     }
 
-    .counselling-page{
+    .counselling-page {
         padding-top: 250px;
     }
-}   
+}
