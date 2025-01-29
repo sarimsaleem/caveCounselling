@@ -13,19 +13,12 @@
     justify-content: space-between;
     margin-bottom: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #b0a491;
+    border-bottom: 1px solid rgb(176, 164, 145) ;
     padding-inline: 0px;
 }
 
 .ds-none {
     display: none !important;
-}
-
-.navbar.scrolled {
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px rgba(186, 198, 176, 0.1);
-    background-color: beige !important;
 }
 
 .navbar-logo>h4>span {
@@ -45,12 +38,11 @@
 .navbar-nav .nav-item .nav-link {
     font-weight: normal;
     color: var(--second-bg-color) !important;
-    transition: background 0.3s, border-bottom 0.3s;
+    /* transition: background 0.3s, border-bottom 0.3s; */
 }
 
 .navbar-nav .nav-item .nav-link:hover {
     border-bottom: 2px solid rgb(176, 164, 145);
-    padding-bottom: 5px;
 }
 
 .navbar-icons .btn-outline-primary {
@@ -65,16 +57,6 @@
 .navbar-icons .btn-outline-primary:hover {
     background: rgb(176, 164, 145) !important;
     color: var(--text-color);
-}
-
-.navbar.scrolled .navbar-icons .btn-outline-primary {
-    background-color: rgb(176, 164, 145) !important;
-    color: var(--text-color);
-}
-
-.navbar.scrolled .navbar-icons .btn-outline-primary:hover {
-    background: transparent !important;
-    color: var(--them-secondary);
 }
 
 .nav-icons-header-phone {
@@ -101,6 +83,10 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+}
+
+.nav-icon-parent{
+    color: rgb(176, 164, 145);
 }
 
 @media (max-width: 767px) {
