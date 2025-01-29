@@ -91,7 +91,8 @@
 
 .nav-header-text {
     margin: 0;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -102,7 +103,8 @@
     justify-content: center;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
+
     .navbar {
         padding-inline: 10px;
     }
@@ -110,72 +112,16 @@
     .nav-header-text {
         font-size: 12px;
         text-align: center;
+        flex: 1;
     }
 
     .nav-upper-text {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         gap: 10px;
+
     }
 
-    .nav-icons-header-phone {
-        font-size: 18px;
-    }
-
-    .nav-icons-header-mail {
-        font-size: 24px;
-    }
-
-    .nav-icon-parent {
-        gap: 15px;
-    }
-
-    .navbar-logo>a>img {
-        height: auto;
-        max-width: 200px;
-    }
-
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .nav-item {
-        text-align: start;
-        width: 100%;
-    }
-
-    .nav-link {
-        font-size: 13px;
-        text-align: center;
-        color: var(--text-color);
-    }
-
-    .navbar-toggler {
-        display: block;
-    }
-
-    .navbar-icons {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .navbar-icons .btn-outline-primary {
-        padding: 8px 15px;
-        font-size: 13px;
-    }
-
-    .navbar-collapse {
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(20px);
-        box-shadow: 0 0 10px rgba(186, 198, 176, 0.1);
-        padding: 10px 0px 20px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
     .nav-header-text {
         font-size: 12px;
         text-align: left;
@@ -220,13 +166,13 @@
 
     .navbar-icons {
         display: flex;
+        align-items: center;
         justify-content: center;
         margin-top: 10px;
     }
 
     .navbar-icons .btn-outline-primary {
-        padding: 8px 15px;
-        font-size: 13px;
+        padding: 10px 10px !important;
     }
 
     .navbar-collapse {
@@ -235,11 +181,16 @@
         box-shadow: 0 0 10px rgba(186, 198, 176, 0.1);
         padding: 10px 0px 20px;
     }
+    .navbar-nav .nav-item .nav-link{
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
     .nav-header-text {
         font-size: 10px;
+        font-weight: 600;
     }
 
     .nav-icons-header-mail {
@@ -277,12 +228,15 @@
     .navbar-logo>a>img {
         width: 210px;
     }
+
     .navbar-nav .nav-item {
         margin-right: 12px;
     }
-    .navbar-nav .nav-item .nav-link{
+
+    .navbar-nav .nav-item .nav-link {
         font-size: 15px;
     }
+
     .navbar-icons .btn-outline-primary {
         padding: 7px 12px;
     }
