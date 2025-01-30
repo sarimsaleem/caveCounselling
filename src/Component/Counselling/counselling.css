@@ -29,12 +29,18 @@
     font-size: 18px;
 }
 
-.row {
-}
-
 .counselling-para:last-child {
     margin: 0;
 }
+
+.counselling-ing-container{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+/* counselling-sub-container */
 
 @media (min-width: 992px) and (max-width: 1200px) {
     

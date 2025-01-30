@@ -112,7 +112,7 @@ function GetInTouchMap() {
 
                                     <p style={{ marginBottom: "10px" }}> In person sessions: Mondays, Tuesdays and Thursdays 12-4pm.</p>
 
-                                    <p style={{ marginBottom: "10px" }}>Online and evening sessions are also available (contact me to discuss this. (takes you to contact me page)</p>
+                                    <p style={{ marginBottom: "10px" }}>Online and evening sessions are also available contact me to discuss this.</p>
 
                                 </div>
                             </div>
