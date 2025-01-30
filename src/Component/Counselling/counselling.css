@@ -1,7 +1,6 @@
 .counselling-page {
     padding-top: 190px;
     padding-bottom: 50px;
-    /* background-color: rgb(176, 164, 145);  */
     background-color: var(--them-color);
 }
 
@@ -26,8 +25,11 @@
     color: #555;
 }
 
+.counselling-para{
+    font-size: 18px;
+}
+
 .row {
-    /* margin-bottom: 20px; */
 }
 
 .counselling-para:last-child {
