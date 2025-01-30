@@ -60,7 +60,7 @@ const Values = () => {
 
   return (
     <div className="values">
-      <div className="container-fluid">
+      <div className="container">
         <div className="values-heading heading-with-sub">
         <h6 className="">What You Can Expect From Me</h6>
         </div>
