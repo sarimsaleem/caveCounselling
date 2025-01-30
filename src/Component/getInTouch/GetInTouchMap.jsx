@@ -27,7 +27,7 @@ function GetInTouchMap() {
     return (
         <>
 
-            <div className="contact-us section-padding" id='contact-us'>
+            <div className="contact-us section-padding" >
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-xl-12 col-lg-12 col-sm-12">
@@ -121,7 +121,7 @@ function GetInTouchMap() {
                 </div>
             </div>
 
-            <div className='contact-us-form section-padding'>
+            <div className='contact-us-form section-padding' id='contact-me' >
                 <div className='container'>
                     <div className="row">
                         <div className="col-md-12">

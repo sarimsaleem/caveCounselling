@@ -2,8 +2,9 @@ import director from '../../Assets/aboutme .png'
 import './aboutMe.css'
 
 function AboutMe() {
+
     return (
-        <div className='about-us-msg section-padding'>
+        <div className='about-us-msg section-padding' id='about-me' >
             <div className='container'>
                 <div className='row d-flex justify-content-center align-items-center about-us-msg-row'>
                     <div className='col-md-12 col-sm-12 col-lg-6 col-xl-6'>
@@ -27,7 +28,7 @@ function AboutMe() {
                                 <p>Whether you are seeking support for yourself or a loved one, I’m here to offer a warm, empathic and culturally sensitive space where you feel truly heard.</p>
                             </div>
                             <div className='about-btn-cont'>
-                                <button type="Submit" className='about-btn' >More About Me</button>
+                                <button type="Submit" className='about-btn' > <a href='#'></a> More About Me</button>
                             </div>
                         </div>
                     </div>

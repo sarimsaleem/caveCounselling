@@ -45,13 +45,13 @@ function Header() {
               <HashLink className="nav-link" smooth to="/#services">My Services</HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link" smooth to="/#about-us">About Me</HashLink>
+              <HashLink className="nav-link" smooth to="/#about-me">About Me</HashLink>
             </li>
             <li className="nav-item">
               <HashLink className="nav-link" smooth to="/#faq">FAQ</HashLink>
             </li>
             <li className="nav-item">
-              <HashLink className="nav-link" smooth to="/#contact-us">Contact Me</HashLink>
+              <HashLink className="nav-link" smooth to="/#contact-me">Contact Me</HashLink>
             </li>
           </ul>
           <div className="navbar-icons">

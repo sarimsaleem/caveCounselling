@@ -28,8 +28,7 @@
 
 .sub-icons>i>svg {
     color: var(--second-bg-color);
-    width: 25px;
-    height: 25px;
+    font-size: 25px;
     cursor: pointer;
 }
 

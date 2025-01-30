@@ -88,8 +88,3 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-
-.about-btn:hover {
-    background-color: var(--them-secondary);
-    color: var(--them-color);
-}

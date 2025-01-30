@@ -20,7 +20,7 @@ function AboutUs() {
     };
 
     return (
-        <div className='about-main section-padding' id='about-us' ref={sectionRef}>
+        <div className='about-main section-padding' ref={sectionRef}>
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-12 col-sm-12 col-lg-7'>
