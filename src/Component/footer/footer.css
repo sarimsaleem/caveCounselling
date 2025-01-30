@@ -36,13 +36,13 @@
 
 .footer-icons {
   display: flex;
-  gap: 0;
+  gap: 25px;
 }
 
 .footer-icons .icon {
   text-decoration: none;
   color: var(--them-color);
-  padding: 0 16px;
+  /* padding: 0 16px; */
   font-size: 30px;
 }
 

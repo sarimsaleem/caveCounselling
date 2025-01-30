@@ -11,10 +11,8 @@
 .nav-upper-text {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgb(176, 164, 145);
-    padding-inline: 0px;
+    padding: 0;
+
 }
 
 .ds-none {
@@ -76,7 +74,7 @@
     margin: 0;
     font-size: 12px;
     font-weight: 700;
-    text-align: center;
+    text-align: start;
 }
 
 .nav-icon-parent {
@@ -95,14 +93,35 @@
 }
 
 
+.sub-header-main {
+    background: beige;
+    padding-bottom: 15px;
+    background: beige;
+    margin-top: 100px;
+}
 
+
+@media (min-width:991px) and (max-width: 1200px) {
+    .sub-header-main {
+        margin-top: 93px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .nav-upper-text {
+        padding-inline: 10px;
+
+    }
+    
+}
 
 @media (max-width: 767px) {
 
     .hide-on-scroll {
         display: none !important;
-      }
-      
+    }
+
 
     .navbar {
         padding-inline: 10px;
@@ -110,7 +129,7 @@
 
     .nav-header-text {
         font-size: 12px;
-        text-align: center;
+        text-align: start;
         flex: 1;
     }
 
@@ -118,7 +137,6 @@
         flex-direction: row;
         text-align: center;
         gap: 10px;
-
     }
 
     .nav-header-text {
@@ -131,6 +149,7 @@
         justify-content: space-between;
         gap: 15px;
         align-items: center;
+        margin-top: 60px;
     }
 
     .nav-icon-parent {
@@ -139,6 +158,12 @@
         align-items: center;
         justify-content: flex-end;
     }
+
+    .sub-header-main {
+        margin-top: 90px;
+    }
+
+
 
     .navbar-logo>a>img {
         height: auto;
@@ -188,7 +213,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
     .nav-header-text {
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 600;
     }
 

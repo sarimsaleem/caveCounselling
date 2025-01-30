@@ -5,10 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 70px;
+    /* padding-block: 70px; */
     min-height: 650px;
     height: auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .hero-container {
@@ -72,6 +72,9 @@
     background-color: beige;
     cursor: pointer;
 }
+.margin-top{
+    margin-top: 100px;
+}
 
 @media (max-width: 768px) {
     .hero-main {
@@ -104,7 +107,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
     .hero-main {
-        margin-top: 140px;
+        /* margin-top: 140px;    */
         min-height: 600px;
         }
 

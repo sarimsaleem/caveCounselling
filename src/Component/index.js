@@ -12,6 +12,7 @@ import Qualifications from "./Qualifications/Qualifications";
 import FAQ from "./FAQ/faq";
 import Services from "./Services/Services";
 import Values from "./Values/Values";
+import SubHeader from "./Hero/subHeader";
 
 
 
@@ -32,5 +33,6 @@ export {
     Values,
     AboutMe,
     Qualifications,
-    Services
+    Services,
+    SubHeader
 }

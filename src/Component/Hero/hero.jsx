@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import './hero.css';
+import { FaPhone } from 'react-icons/fa6';
+import { IoIosMail } from 'react-icons/io';
 
 const HeroSection = () => {
 
     useEffect(() => {
         const adjustBannerPosition = () => {
-            const navbar = document.querySelector('.navbar');  
-            const heroMain = document.querySelector('.hero-main'); 
-            const navbarHeight = navbar.offsetHeight;  
+            const navbar = document.querySelector('.navbar');
+            const heroMain = document.querySelector('.hero-main');
+            const navbarHeight = navbar.offsetHeight;
             // heroMain.style.marginTop = `${navbarHeight}px`;
         };
 
@@ -18,9 +20,10 @@ const HeroSection = () => {
         return () => {
             window.removeEventListener('resize', adjustBannerPosition);
         };
-    }, []);  
+    }, []);
 
-    return (
+    return (<>
+   
         <div className='hero-main' id='home'>
             <div className="container">
                 <div className="row align-items-center">
@@ -31,16 +34,18 @@ const HeroSection = () => {
                                 <h1 className='p-0 m-0'>Cave Counselling</h1>
                             </div>
                             <p className='p-0 m-0'>
-                                “A sanctuary where you can escape the noise of the world and reconnect with your inner self. Amid the hustle and bustle of daily life, moments of stillness to reflect, explore, and find clarity are rare...”
+                              " A sanctuary where you can escape the noise of the world and reconnect with your inner self. Amid the hustle and bustle of daily life, moments of stillness to reflect, explore, and find clarity are rare. Whether you’re navigating challenges, feeling isolated, or seeking inner peace, you don’t have to face life’s transitions or hardships alone. Let this be your space for understanding, healing, and discovering the strength within. "
                             </p>
-                            <div className="hero-content-btn">
+                            {/* <div className="hero-content-btn">
                                 <button>LEARN MORE</button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </>
+
     );
 }
 
