@@ -11,7 +11,6 @@ function App() {
   return (
     <div>
       <Header />
-    
       <Suspense fallback={<Cloader />}>
         <Routes>
           <Route path='/' element={<Home />} />
