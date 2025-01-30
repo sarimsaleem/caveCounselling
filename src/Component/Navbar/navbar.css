@@ -52,7 +52,8 @@
     color: var(--them-secondary);
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-}
+    font-weight: 600;
+}   
 
 .navbar-icons .btn-outline-primary:hover {
     background: rgb(176, 164, 145) !important;
@@ -87,6 +88,10 @@
 
 .nav-icon-parent{
     color: rgb(176, 164, 145);
+}
+
+.navbar-toggler{
+    border-radius: 0;
 }
 
 @media (max-width: 767px) {
@@ -125,7 +130,6 @@
         gap: 15px;
         align-items: center;
         justify-content: flex-end;
-        /* Aligns icons to the right */
     }
 
     .navbar-logo>a>img {
