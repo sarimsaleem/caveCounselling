@@ -44,17 +44,17 @@ const Values = () => {
     arrows:false,
     responsive: [
       {
-        breakpoint: 777,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 560,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      }
     ],
   };
 

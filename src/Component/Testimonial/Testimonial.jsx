@@ -65,9 +65,9 @@ const Testimonials = () => {
                   pagination={{ clickable: true }}
                   autoplay={{ delay: 2000 }}
                   breakpoints={{
-                    300: { slidesPerView: 1 },
-                    501: { slidesPerView: 2 },
-                    724: { slidesPerView: 2.3 },
+                    320: { slidesPerView: 1 },
+                    768: { slidesPerView: 1  },
+                    // 724: { slidesPerView: 2.3 },
                   }}
                 >
                   {testimonialData.map((item, index) => (

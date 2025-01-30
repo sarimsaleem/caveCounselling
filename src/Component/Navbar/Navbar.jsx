@@ -14,22 +14,50 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const upperText = document.querySelector('.nav-upper-text.res-none');
+
+      if (upperText) {
+        if (window.innerWidth <= 767) {
+          if (window.scrollY > 50) {
+            upperText.style.display = 'none';
+          } else {
+            upperText.style.display = 'flex'; 
+          }
+        } else {
+          upperText.style.display = 'flex';
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className={`navbar navbar-expand-lg fixed-top`} style={{ display: "flex", flexDirection: "column" }} >
-      <div className={`container nav-upper-text res-none`} >
-        <p className='nav-header-text'>Integrative Counsellor for Children, Young people and Adults. Online, by phone and in-person in Walthamstow, East London</p>
+    <nav className="navbar navbar-expand-lg fixed-top" style={{ display: "flex", flexDirection: "column" }}>
+      <div className="container nav-upper-text res-none">
+        <p className='nav-header-text'>
+          Integrative Counsellor for Children, Young people and Adults. Online, by phone and in-person in Walthamstow, East London
+        </p>
         <div className='nav-icon-parent'>
           <a href="tel:+447777966289">
-            <FaPhone className='nav-icons-header-phone'  />
+            <FaPhone className='nav-icons-header-phone' />
           </a>|
           <a href="mailto:cavecounselling@outlook.com">
-            <IoIosMail className='nav-icons-header-mail'  />
+            <IoIosMail className='nav-icons-header-mail' />
           </a>
         </div>
       </div>
       <div className="container" style={{ paddingInline: "0px" }}>
-        <div className="navbar-logo" >
-          <Link className="nav-link" to="home"  >
+        <div className="navbar-logo">
+          <Link className="nav-link" to="home">
             <img src={logo} alt="Logo" />
           </Link>
         </div>

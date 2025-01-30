@@ -13,7 +13,7 @@
     justify-content: space-between;
     margin-bottom: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid rgb(176, 164, 145) ;
+    border-bottom: 1px solid rgb(176, 164, 145);
     padding-inline: 0px;
 }
 
@@ -53,7 +53,7 @@
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     font-weight: 600;
-}   
+}
 
 .navbar-icons .btn-outline-primary:hover {
     background: rgb(176, 164, 145) !important;
@@ -86,15 +86,23 @@
     justify-content: center;
 }
 
-.nav-icon-parent{
+.nav-icon-parent {
     color: rgb(176, 164, 145);
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border-radius: 0;
 }
 
+
+
+
 @media (max-width: 767px) {
+
+    .hide-on-scroll {
+        display: none !important;
+      }
+      
 
     .navbar {
         padding-inline: 10px;
@@ -171,7 +179,8 @@
         box-shadow: 0 0 10px rgba(186, 198, 176, 0.1);
         padding: 10px 0px 20px;
     }
-    .navbar-nav .nav-item .nav-link{
+
+    .navbar-nav .nav-item .nav-link {
         text-align: center;
     }
 }
