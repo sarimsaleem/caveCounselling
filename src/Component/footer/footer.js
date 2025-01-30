@@ -36,7 +36,7 @@ const Testimonials = () => {
 
             <div className="col-sm-12 col-md-6 col-lg-4">
               <div className="footer-section">
-                <h4 style={{ color: 'var(--text-color)', fontSize: "20px",  marginBlock: "15px" }}>..</h4>
+                <h4 style={{ color: 'var(--text-color)', fontSize: "20px",  marginBlock: "15px" }}>Menu</h4>
                 <ul className='list' style={{ listStyle: "none", padding: "0" }}>
                   <li style={{ color: 'var(--text-color)', lineHeight: "2" }} >Home</li>
                   <li style={{ color: 'var(--text-color)', lineHeight: "2" }} >About Us</li>

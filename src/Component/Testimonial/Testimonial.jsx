@@ -66,7 +66,7 @@ const Testimonials = () => {
                   autoplay={{ delay: 2000 }}
                   breakpoints={{
                     320: { slidesPerView: 1 },
-                    768: { slidesPerView: 1  },
+                    768: { slidesPerView: 2  },
                     // 724: { slidesPerView: 2.3 },
                   }}
                 >
