@@ -97,31 +97,30 @@
     background: beige;
     padding-bottom: 15px;
     background: beige;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 
 @media (min-width:991px) and (max-width: 1200px) {
     .sub-header-main {
-        margin-top: 93px;
+        padding-top: 93px;
     }
 }
 
-@media (max-width: 576px) {
-
+@media  (max-width: 576px) {
     .nav-upper-text {
         padding-inline: 10px;
 
     }
-    
+
 }
 
 @media (max-width: 767px) {
 
     .hide-on-scroll {
         display: none !important;
-    }
-
+      }
+      
 
     .navbar {
         padding-inline: 10px;
@@ -158,9 +157,8 @@
         align-items: center;
         justify-content: flex-end;
     }
-
     .sub-header-main {
-        margin-top: 90px;
+        padding-top: 30px;
     }
 
 
