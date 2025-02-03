@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import './navbar.css';
 import logo from '../../Assets/logo.png';
-import { Link } from 'react-scroll';
 import { HashLink } from 'react-router-hash-link';
 import { FaPhone } from 'react-icons/fa6';
 import { IoIosMail } from 'react-icons/io';
@@ -21,9 +20,9 @@ function Header() {
 
         <div className="container" style={{ paddingInline: "0px" }}>
           <div className="navbar-logo">
-            <Link className="nav-link" to="home">
+            <a className="nav-link" href="/#home">
               <img src={logo} alt="Logo" />
-            </Link>
+            </a>
           </div>
           <button className="navbar-toggler" type="button" onClick={handleMenuClick} aria-controls="navbarNav" aria-expanded={menuOpen ? 'true' : 'false'} aria-label="Toggle navigation">
             <FaBars />
@@ -47,7 +46,7 @@ function Header() {
               </li>
             </ul>
             <div className="navbar-icons">
-              <button className="btn btn-outline-primary">Book Free Consultation</button>
+              <button className="book-free-counsultaion-btn"> <a href="/#contact-me"> Book Free Consultation </a></button>
             </div>
           </div>
         </div>

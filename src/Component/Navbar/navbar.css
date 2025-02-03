@@ -43,19 +43,25 @@
     border-bottom: 2px solid rgb(176, 164, 145);
 }
 
-.navbar-icons .btn-outline-primary {
-    padding: 12px 30px;
-    border: 1px solid rgb(176, 164, 145) !important;
+.navbar-icons .book-free-counsultaion-btn {
     border-radius: 0;
-    color: var(--them-secondary);
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    background: transparent;
     font-weight: 600;
+    border: none;
 }
 
-.navbar-icons .btn-outline-primary:hover {
+.navbar-icons .book-free-counsultaion-btn a {
+    border: 1px solid rgb(176, 164, 145) !important;
+    padding: 12px 30px;
+    color: var(--them-secondary) !important;
+    text-decoration: none;
+}
+
+.navbar-icons .book-free-counsultaion-btn a:hover {
     background: rgb(176, 164, 145) !important;
-    color: var(--text-color);
+    color: var(--text-color) !important;
+
 }
 
 .nav-icons-header-phone {
@@ -107,7 +113,7 @@
     }
 }
 
-@media  (max-width: 576px) {
+@media (max-width: 576px) {
     .nav-upper-text {
         padding-inline: 10px;
 
@@ -119,8 +125,8 @@
 
     .hide-on-scroll {
         display: none !important;
-      }
-      
+    }
+
 
     .navbar {
         padding-inline: 10px;
@@ -157,6 +163,7 @@
         align-items: center;
         justify-content: flex-end;
     }
+
     .sub-header-main {
         padding-top: 30px;
     }
@@ -192,7 +199,7 @@
         margin-top: 10px;
     }
 
-    .navbar-icons .btn-outline-primary {
+    .navbar-icons .book-free-counsultaion-btn {
         padding: 10px 10px !important;
     }
 
@@ -240,7 +247,7 @@
         margin-top: 10px;
     }
 
-    .navbar-icons .btn-outline-primary {
+    .navbar-icons .book-free-counsultaion-btn {
         padding: 10px 10px !important;
     }
 }
@@ -259,7 +266,7 @@
         font-size: 15px;
     }
 
-    .navbar-icons .btn-outline-primary {
+    .navbar-icons .book-free-counsultaion-btn {
         padding: 7px 12px;
     }
 }

@@ -2,10 +2,10 @@ import React from 'react'
 import { Category, HeroSection, Testimonials, FAQ, GetInTouchMap, AboutUs, AboutMe, Services, Values, SubHeader } from '../../Component'
 import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
-function Home() { 
+function Home() {
   return (
     <>
-    <SubHeader />
+      {/* <SubHeader /> */}
       <HeroSection />
       <Category />
       <Services />
