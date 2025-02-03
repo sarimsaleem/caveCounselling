@@ -61,21 +61,22 @@
 
 .nav-icons-header-phone {
     font-size: 18px;
-    color: #5a6e56;
+    color: var(--text-color);
     cursor: pointer;
 }
 
 .nav-icons-header-mail {
     font-size: 24px;
-    color: #5a6e56;
+    color: var(--text-color);
     cursor: pointer;
 }
 
 .nav-header-text {
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     text-align: start;
+    color: white;
 }
 
 .nav-icon-parent {
@@ -95,10 +96,8 @@
 
 
 .sub-header-main {
-    background: beige;
-    padding-bottom: 15px;
-    background: beige;
-    padding-top: 100px;
+    padding-bottom: 45px;
+    padding-top: 70px;
 }
 
 
@@ -106,12 +105,30 @@
     .sub-header-main {
         padding-top: 93px;
     }
+
+    .nav-header-text {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 576px) {
     .nav-upper-text {
         padding-inline: 10px;
 
+    }
+
+}
+
+@media (max-width: 450px) {
+    .sub-header-main {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width:451px) and (max-width:767px) {
+    
+    .sub-header-main {
+        padding-top: 0px;
     }
 
 }
@@ -128,28 +145,20 @@
     }
 
     .nav-header-text {
-        font-size: 12px;
-        text-align: start;
+        font-size: 11px;
         flex: 1;
+        text-align: left;
+
     }
 
     .nav-upper-text {
         flex-direction: row;
         text-align: center;
         gap: 10px;
-    }
-
-    .nav-header-text {
-        font-size: 12px;
-        text-align: left;
-    }
-
-    .nav-upper-text {
         flex-direction: row;
         justify-content: space-between;
-        gap: 15px;
         align-items: center;
-        margin-top: 60px;
+        /* margin-top: 60px; */
     }
 
     .nav-icon-parent {
@@ -158,12 +167,6 @@
         align-items: center;
         justify-content: flex-end;
     }
-
-    .sub-header-main {
-        padding-top: 30px;
-    }
-
-
 
     .navbar-logo>a>img {
         height: auto;
@@ -213,7 +216,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
     .nav-header-text {
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 600;
     }
 
@@ -261,7 +264,7 @@
         font-size: 15px;
     }
 
-    .navbar-icons .book-free-counsultaion-btn a{
+    .navbar-icons .book-free-counsultaion-btn a {
         padding: 7px 12px;
     }
 }
