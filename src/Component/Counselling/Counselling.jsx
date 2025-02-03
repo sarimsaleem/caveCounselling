@@ -23,7 +23,7 @@ const Counselling = () => {
                         <h6>{title}</h6>
                     </div>
                 </div>
-                <div className='row counselling-main-section-row' >
+                <div className='row' >
                     <div className='col-sm-12 col-md-12 col-lg-6'>
                         <div className="counselling-main-img-container">
                         <img src={image} alt={title} className='img-fluid' />

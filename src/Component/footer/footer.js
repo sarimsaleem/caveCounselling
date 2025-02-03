@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
 
     <>
-      <footer className="footer" style={{ backgroundColor: 'var(--them-secondary)', color: 'var(--them-color)', padding: '40px 0 0 0' }}>
+      <footer className="footer" style={{ backgroundColor: 'var(--them-secondary)', color: 'var(--them-color)', paddingBlock: '40px' }}>
         <div className="container">
           <div className="row">
 
