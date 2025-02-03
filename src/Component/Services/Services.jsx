@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './services.css';
-import adultCounselling from "../../Assets/childCoun.webp"
+import adultCounselling from "../../Assets/adultCoun.jpg"
 import childCounselling from "../../Assets/childCoun.webp"
 
 const Services = () => {

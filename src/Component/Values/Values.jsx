@@ -62,7 +62,7 @@ const Values = () => {
     <div className="values">
       <div className="container">
         <div className="values-heading heading-with-sub">
-        <h6 className="">What You Can Expect From Me</h6>
+        <h6 className="">What you can expect from me</h6>
         </div>
         <Slider ref={sliderRef} {...settings}>
           {slides.map((slide, index) => (

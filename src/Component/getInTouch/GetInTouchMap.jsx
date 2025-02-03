@@ -91,7 +91,7 @@ function GetInTouchMap() {
                             <div className='fees-availability-content'>
                                 <div className="heading-with-sub about-heading">
                                     <h3 className="p-0">Fees & Availability</h3>
-                                    <h6 className="p-0 m-0">Flexible Scheduling And Transparent Pricing Tailored For You.</h6>
+                                    <h6 className="p-0 m-0">Flexible scheduling and transparent pricing tailored for you.</h6>
                                 </div>
                                 <div className='about-para'>
 
@@ -127,7 +127,7 @@ function GetInTouchMap() {
                         <div className="col-md-12">
                             <div className="contact-us-form-heading heading-with-sub">
                                 <h3 className="p-0 ">Get In Touch With Me</h3>
-                                <h6 className="p-0 m-0">Fill The Form Below So I Can Get To Know You And Your Needs Better.</h6>
+                                <h6 className="p-0 m-0">Fill the form below so i can get to know you and your needs better.</h6>
                                 <p>Feel free to contact me if you have any questions about how counselling works, or to arrange an initial assessment appointment.</p>
                                 <p>Booking an initial session of Counselling can often help in your decision about whether Counselling is right for you or your child. There is no obligation to continue after this initial session.</p>
                             </div>
