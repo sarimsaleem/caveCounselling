@@ -27,7 +27,7 @@ const HeroSection = () => {
         <div className='hero-main' id='home'>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className='sub-header-main'>
+                    {/* <div className='sub-header-main'>
                         <div className="container nav-upper-text res-none">
                             <p className='nav-header-text'>
                                 Integrative Counsellor for Children, Young people and Adults. Online, by phone and in-person in Walthamstow, East London
@@ -41,8 +41,26 @@ const HeroSection = () => {
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
                     <div className="col-md-7 col-sm-12 col-lg-7 col-xl-7">
+                        {/* <div className="col-md-11 col-sm-12 col-lg-11 col-xl-10">
+                            <div className='sub-header-main'>
+                                <div className="container nav-upper-text res-none">
+                                    <p className='nav-header-text'>
+                                        Integrative Counsellor for Children, Young people and Adults. Online, by phone and in-person in Walthamstow, East London
+                                    </p>
+                                    <div className='nav-icon-parent'>
+                                        <a href="tel:+447777966289">
+                                            <FaPhone className='nav-icons-header-phone' />
+                                        </a>|
+                                        <a href="mailto:cavecounselling@outlook.com">
+                                            <IoIosMail className='nav-icons-header-mail' />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> */}
                         <div className="hero-content">
                             <div className="hero-content-heading">
 

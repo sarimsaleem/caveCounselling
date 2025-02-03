@@ -98,6 +98,7 @@
 .sub-header-main {
     padding-bottom: 45px;
     padding-top: 70px;
+    /* padding: 70px 0 45px; */
 }
 
 
@@ -154,11 +155,11 @@
     .nav-upper-text {
         flex-direction: row;
         text-align: center;
-        gap: 10px;
+        gap: 15px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        /* margin-top: 60px; */
+        padding-inline: 0;
     }
 
     .nav-icon-parent {
