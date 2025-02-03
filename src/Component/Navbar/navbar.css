@@ -36,11 +36,6 @@
 .navbar-nav .nav-item .nav-link {
     font-weight: normal;
     color: var(--second-bg-color) !important;
-    /* transition: background 0.3s, border-bottom 0.3s; */
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 2px solid rgb(176, 164, 145);
 }
 
 .navbar-icons .book-free-counsultaion-btn {
@@ -199,7 +194,7 @@
         margin-top: 10px;
     }
 
-    .navbar-icons .book-free-counsultaion-btn {
+    .navbar-icons .book-free-counsultaion-btn a {
         padding: 10px 10px !important;
     }
 
@@ -247,7 +242,7 @@
         margin-top: 10px;
     }
 
-    .navbar-icons .book-free-counsultaion-btn {
+    .navbar-icons .book-free-counsultaion-btn a {
         padding: 10px 10px !important;
     }
 }
@@ -266,7 +261,7 @@
         font-size: 15px;
     }
 
-    .navbar-icons .book-free-counsultaion-btn {
+    .navbar-icons .book-free-counsultaion-btn a{
         padding: 7px 12px;
     }
 }
