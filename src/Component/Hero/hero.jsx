@@ -44,7 +44,7 @@ const HeroSection = () => {
                     </div> */}
 
                     <div className="col-md-7 col-sm-12 col-lg-7 col-xl-7">
-                        {/* <div className="col-md-11 col-sm-12 col-lg-11 col-xl-10">
+                        <div className="col-md-11 col-sm-12 col-lg-11 col-xl-10">
                             <div className='sub-header-main'>
                                 <div className="container nav-upper-text res-none">
                                     <p className='nav-header-text'>
@@ -60,7 +60,7 @@ const HeroSection = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         <div className="hero-content">
                             <div className="hero-content-heading">
 

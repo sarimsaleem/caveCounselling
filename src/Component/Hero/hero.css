@@ -1,7 +1,9 @@
 .hero-main {
     background-image: url(../../Assets/hero.jpg);
+    	        background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%), url(../../Assets/hero.jpg);
+
     background-size: cover;
-    background-position: center;
+    background-position: cenrter;
     display: flex;
     justify-content: center;
     align-items: center;
