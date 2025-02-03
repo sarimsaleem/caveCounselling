@@ -106,7 +106,7 @@ function GetInTouchMap() {
 
                                     <p style={{ marginBottom: "10px" }}>Child and Young person Counselling (50 minutes) - £60</p>
 
-                                    <p style={{ marginBottom: "10px" }}>Please note I also have a limited number of slots for low-income clients and students, so please contact me to discuss this. (takes you to contact me page)</p>
+                                    <p style={{ marginBottom: "10px" }}>Please note I also have a limited number of slots for low-income clients and students, so please contact me to discuss this.</p>
 
                                     <p style={{ marginBottom: "10px" }}><span className='para-bold'>Appointments are currently available : </span></p>
 
