@@ -7,12 +7,10 @@
     padding-top: 20px;
 }
 
-
 .nav-upper-text {
     display: flex;
     justify-content: space-between;
     padding: 0;
-
 }
 
 .ds-none {
@@ -56,7 +54,6 @@
 .navbar-icons .book-free-counsultaion-btn a:hover {
     background: rgb(176, 164, 145) !important;
     color: var(--text-color) !important;
-
 }
 
 .nav-icons-header-phone {
@@ -71,7 +68,6 @@
     cursor: pointer;
 }
 
-
 .nav-icon-parent {
     display: flex;
     gap: 10px;
@@ -83,7 +79,6 @@
 .navbar-toggler {
     border-radius: 0;
 }
-
 
 .sub-header-main {
     padding-bottom: 10px;
@@ -265,14 +260,15 @@
         font-size: 12px;
     }
 
-    .nav-icon-parent{
+    .nav-icon-parent {
         gap: 7px;
     }
 
-    .nav-icons-header-phone{
+    .nav-icons-header-phone {
         font-size: 14px;
     }
-    .nav-icons-header-mail{
+
+    .nav-icons-header-mail {
         font-size: 22px;
     }
 }
