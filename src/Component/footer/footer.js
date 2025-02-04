@@ -13,9 +13,11 @@ const Testimonials = () => {
 
             <div className="col-sm-12 col-md-6 col-lg-4">
               <div className="footer-section">
+
                 <h4 style={{ color: 'var(--text-color)', fontSize: "20px", marginBlock: "15px" }} >Contact Us</h4>
                 <h6 style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >Head Office</h6>
-                <p style={{ color: 'var(--text-color)', lineHeight: "2" }}>Wood street Walthamstow, east London.</p>
+                <p style={{ color: 'var(--text-color)', lineHeight: "2" }}><a href="https://www.google.com/maps/search/?api=1&query=Wood+street+Walthamstow+east+London" target='blank' style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >Wood street Walthamstow, east London.</a></p>
+
                 <h6 style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }}>Phone Number</h6>
                 <p style={{margin: ""}}><a href="tel:+07777966289" style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >T: 07777 966 289</a></p>
                 <h6 style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >Email Address</h6>

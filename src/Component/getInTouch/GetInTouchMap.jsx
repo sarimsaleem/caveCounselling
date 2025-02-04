@@ -54,7 +54,6 @@ function GetInTouchMap() {
                         <div className="col-md-12 col-xl-12 col-lg-12 col-sm-12">
                             <div className="contact-us-heading heading-with-sub">
                                 <h3 className="p-0">My Location</h3>
-                                {/* <h6 className="p-0 m-0">We're Always Eager To Hear From You!</h6> */}
                             </div>
                         </div>
                     </div>
@@ -80,6 +79,7 @@ function GetInTouchMap() {
                                 <div className="info-cards-container">
                                     <div className="info-cards">
                                         {infoCards.map((card, index) => (
+                                            <a href={card.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "var(--second-bg-color)", width: "100%" }}> 
                                             <div className="info-card" key={index}>
                                             <div className="info-card-icon">
                                                 {card.icon}
@@ -88,15 +88,14 @@ function GetInTouchMap() {
                                                 <h4>{card.title}</h4>
                                                 {card.link ? (
                                                     <p>
-                                                        <a href={card.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "var(--second-bg-color)" }}>
                                                             {card.address}
-                                                        </a>
                                                     </p>
                                                 ) : (
                                                     <p>{card.address}</p>
                                                 )}
                                             </div>
                                         </div>
+                                        </a>
                                         ))}
                                     </div>
                                 </div>
