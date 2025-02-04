@@ -28,7 +28,7 @@ function Header() {
             <FaBars />
           </button>
           <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navbarNav">
-            <ul className="navbar-nav mx-auto">
+            <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <HashLink className="nav-link" smooth to="/#home">Home</HashLink>
               </li>
@@ -44,6 +44,16 @@ function Header() {
               <li className="nav-item">
                 <HashLink className="nav-link" smooth to="/#contact-me">Contact Me</HashLink>
               </li>
+              <li className="nav-item">
+                <div className='nav-icon-parent nav-link'>
+                  <a href="tel:+447777966289">
+                    <FaPhone className='nav-icons-header-phone' />
+                  </a>|
+                  <a href="mailto:cavecounselling@outlook.com">
+                    <IoIosMail className='nav-icons-header-mail' />
+                  </a>
+                </div>
+              </li>
             </ul>
             <div className="navbar-icons">
               <button className="book-free-counsultaion-btn"> <a href="/#contact-me"> Book Free Consultation </a></button>
@@ -51,6 +61,15 @@ function Header() {
           </div>
         </div>
       </nav>
+
+      <div className='sub-header-main'>
+        <div className="container nav-upper-text res-none">
+          <p className='nav-header-text'>
+            Integrative Counsellor for Children, Young people and Adults. Online, by phone and in-person in Walthamstow, East London
+          </p>
+
+        </div>
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ function GetInTouchMap() {
         { title: "Head Office", address: "Wood street Walthamstow, east London​", icon: <FaMapMarkerAlt /> },
         { title: "Phone Number", address: "07777 966 289", icon: <FaPhoneAlt /> },
         { title: "Send Email", address: "cavecounselling@outlook.com", icon: <FaEnvelope /> },
-        { title: "Instagram", address: "cavecounselling", icon: <FaInstagram /> },
+        { title: "Instagram", address: "cave_counselling", icon: <FaInstagram /> },
     ];
 
     function handleSubmit(event) {

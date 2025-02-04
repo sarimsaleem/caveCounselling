@@ -1,16 +1,13 @@
 .hero-main {
     background-image: url(../../Assets/hero.jpg);
     	        background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%), url(../../Assets/hero.jpg);
-
     background-size: cover;
-    background-position: cenrter;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-block: 70px; */
     min-height: 650px;
     height: auto;
-    /* margin-top: 100px; */
 }
 
 .hero-container {
@@ -81,7 +78,7 @@
 @media (max-width: 768px) {
 
     .hero-main {
-        min-height: 670px;
+        min-height: 460px;
     }
 
     .hero-img-container>img {
@@ -109,8 +106,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
     .hero-main {
-        /* margin-top: 140px;    */
-        min-height: 600px;
+        min-height: 538px;
     }
 
     .hero-content-heading h1 {

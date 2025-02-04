@@ -30,7 +30,7 @@
 }
 
 .navbar-nav .nav-item {
-    margin-right: 15px;
+    margin-right: 12px;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -60,33 +60,23 @@
 }
 
 .nav-icons-header-phone {
-    font-size: 18px;
-    color: var(--text-color);
+    font-size: 17px;
+    color: #000000ab;
     cursor: pointer;
 }
 
 .nav-icons-header-mail {
     font-size: 24px;
-    color: var(--text-color);
+    color: #000000ab;
     cursor: pointer;
 }
 
-.nav-header-text {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: start;
-    color: white;
-}
 
 .nav-icon-parent {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
-}
-
-.nav-icon-parent {
     color: rgb(176, 164, 145);
 }
 
@@ -96,40 +86,36 @@
 
 
 .sub-header-main {
-    padding-bottom: 45px;
-    padding-top: 70px;
-    /* padding: 70px 0 45px; */
+    padding-bottom: 10px;
+    padding-top: 110px;
+    background-color: white;
+}
+
+.nav-header-text {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: start;
+    color: black;
 }
 
 
-@media (min-width:991px) and (max-width: 1200px) {
+@media (max-width: 450px) {
     .sub-header-main {
-        padding-top: 93px;
-    }
-
-    .nav-header-text {
-        font-size: 12px;
+        padding-top: 98px;
     }
 }
 
 @media (max-width: 576px) {
     .nav-upper-text {
         padding-inline: 10px;
-
-    }
-
-}
-
-@media (max-width: 450px) {
-    .sub-header-main {
-        padding-top: 50px;
     }
 }
 
 @media (min-width:451px) and (max-width:767px) {
-    
+
     .sub-header-main {
-        padding-top: 0px;
+        padding-top: 100px;
     }
 
 }
@@ -159,7 +145,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-inline: 0;
     }
 
     .nav-icon-parent {
@@ -210,7 +195,9 @@
     }
 
     .navbar-nav .nav-item .nav-link {
-        text-align: center;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -262,10 +249,30 @@
     }
 
     .navbar-nav .nav-item .nav-link {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .navbar-icons .book-free-counsultaion-btn a {
         padding: 7px 12px;
+        font-size: 14px;
+    }
+
+    .sub-header-main {
+        padding-top: 104px;
+    }
+
+    .nav-header-text {
+        font-size: 12px;
+    }
+
+    .nav-icon-parent{
+        gap: 7px;
+    }
+
+    .nav-icons-header-phone{
+        font-size: 14px;
+    }
+    .nav-icons-header-mail{
+        font-size: 22px;
     }
 }
