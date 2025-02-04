@@ -1,17 +1,38 @@
 import React from 'react'
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram } from "react-icons/fa";
 import './GetInTouchMap.css'
-import { useFormik } from 'formik';
 import fees from "../../Assets/fees.jpg"
+
 function GetInTouchMap() {
 
-
     const infoCards = [
-        { title: "Head Office", address: "Wood street Walthamstow, east London​", icon: <FaMapMarkerAlt /> },
-        { title: "Phone Number", address: "07777 966 289", icon: <FaPhoneAlt /> },
-        { title: "Send Email", address: "cavecounselling@outlook.com", icon: <FaEnvelope /> },
-        { title: "Instagram", address: "cave_counselling", icon: <FaInstagram /> },
+        { 
+            title: "Head Office", 
+            address: "Wood street Walthamstow, east London​", 
+            icon: <FaMapMarkerAlt />,
+            link: "https://www.google.com/maps/search/?api=1&query=Wood+street+Walthamstow+east+London"
+        },
+        { 
+            title: "Phone Number", 
+            address: "07777 966 289", 
+            icon: <FaPhoneAlt />,
+            link: "tel:+447777966289"
+        },
+        { 
+            title: "Send Email", 
+            address: "cavecounselling@outlook.com", 
+            icon: <FaEnvelope />,
+            link: "mailto:cavecounselling@outlook.com"
+        },
+        { 
+            title: "Instagram", 
+            address: "cave_counselling", 
+            icon: <FaInstagram />,
+            link: "https://www.instagram.com/cave_counselling/"
+        },
     ];
+    
+
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -45,9 +66,8 @@ function GetInTouchMap() {
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40803.235262064105!2d-0.26674749999999997!3d51.5287393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1698793256143!5m2!1sen!2s"
                                         style={{
-                                            // border: "0",
-                                            width: "100%", // Make the width responsive
-                                            height: "390px", // Fixed height
+                                            width: "100%",
+                                            height: "390px",
                                         }}
                                         allowfullscreen=""
                                         loading="lazy"
@@ -61,14 +81,22 @@ function GetInTouchMap() {
                                     <div className="info-cards">
                                         {infoCards.map((card, index) => (
                                             <div className="info-card" key={index}>
-                                                <div className="info-card-icon">
-                                                    {card.icon}
-                                                </div>
-                                                <div className="info-card-content">
-                                                    <h4>{card.title}</h4>
-                                                    <p>{card.address}</p>
-                                                </div>
+                                            <div className="info-card-icon">
+                                                {card.icon}
                                             </div>
+                                            <div className="info-card-content">
+                                                <h4>{card.title}</h4>
+                                                {card.link ? (
+                                                    <p>
+                                                        <a href={card.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "var(--second-bg-color)" }}>
+                                                            {card.address}
+                                                        </a>
+                                                    </p>
+                                                ) : (
+                                                    <p>{card.address}</p>
+                                                )}
+                                            </div>
+                                        </div>
                                         ))}
                                     </div>
                                 </div>
