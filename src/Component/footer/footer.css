@@ -46,6 +46,10 @@
   font-size: 30px;
 }
 
+.footer-logo{
+  cursor: pointer;
+}
+
 .footer-logo img {
   width: 40px;
 }
