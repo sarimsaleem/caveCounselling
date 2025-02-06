@@ -27,9 +27,9 @@ function AboutMe() {
                                 <p>My approach provides a safe, private, and non-judgmental space where you can explore your thoughts and feelings at your own pace. I am here to support you in navigating difficulties and working toward your goals. Every counselling journey is unique to each client, and I am committed to creating a tailored approach that respects your individuality. As a Muslim woman, I understand the significance of culture and faith in shaping identity. I ensure my practice aligns with these values, fostering a holistic understanding of each client and their lived experiences. </p>
                                 <p>Whether you are seeking support for yourself or a loved one, I’m here to offer a warm, empathic and culturally sensitive space where you feel truly heard.</p>
                             </div>
-                            <div className='about-btn-cont'>
+                            {/* <div className='about-btn-cont'>
                                 <button type="Submit" className='about-btn' > <a href='#'></a> More About Me</button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

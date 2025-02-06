@@ -21,7 +21,7 @@ const Services = () => {
             title: 'Adult Counselling',
             description: [
                 "Life can feel overwhelming, at times it may be full of challenges, change, and uncertainty. You may feel stuck, misunderstood, or unsure where to turn. Cave Counselling offers you a safe, supportive space where you can explore your feelings, share your struggles, and reconnect with yourself.",
-                "As an integrative counsellor, I draw on a range of approaches to meet your unique needs. Our work together will be client-led, focusing on what you choose to bring to each session. I may explore how your past shapes your present using psychodynamic techniques or introduce practical tools like CBT or mindfulness to help you manage day-to-day challenges.",
+                "As an Integrative Counsellor, I draw on a range of approaches to meet your unique needs. Our work together will be client-led, focusing on what you choose to bring to each session. I may explore how your past shapes your present using psychodynamic techniques or introduce practical tools like CBT or mindfulness to help you manage day-to-day challenges.",
                 "Taking the first step can feel daunting, but you don’t have to face it alone. By working together, you can find clarity, strength, and a path forward."
             ],
             image: adultCounselling,

@@ -63,7 +63,7 @@ const Testimonials = () => {
                     slideShadows: true,
                   }}
                   pagination={{ clickable: true }}
-                  autoplay={{ delay: 2000 }}
+                  autoplay={{ delay: 4000 }}
                   breakpoints={{
                     320: { slidesPerView: 1 },
                     768: { slidesPerView: 2  },
