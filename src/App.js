@@ -1,10 +1,9 @@
-import { Suspense, lazy } from 'react';
-import { Cloader, Footer, SubFooter } from './Component';
+import { lazy } from 'react';
+import { Footer } from './Component';
 import Header from './Component/Navbar/Navbar';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Counselling from './Component/Counselling/Counselling';
-// import CookieExample from './Utils/CookieExample';
 import CookieConsent from './Utils/CookieConsent';
 
 const Home = lazy(() => import('./Pages/Home'));
@@ -19,7 +18,6 @@ function App() {
           <Route path='/counselling' element={<Counselling />} />
         </Routes> 
         <CookieConsent />
-        {/* <CookieExample /> */}
       <Footer />
     </div> 
   );
