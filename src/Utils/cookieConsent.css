@@ -5,14 +5,16 @@
     color: #fff;
     padding: 15px;
     z-index: 1000;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
+    gap: 20px;
 }
 
 .cookie-icon-parent{
     text-align: center;
-    margin-bottom: 15px;
 }
 
 .cookie-icon-parent svg{
@@ -26,8 +28,9 @@
 }
 
 .cookie-text {
-    margin: 0 0 15px 0;
-    text-align: center;
+    margin: 0;
+    text-align: start;
+    font-size: 12px;
 }
 
 .acceptBtn {
@@ -51,17 +54,16 @@
 .cookie-btn-container {
     display: flex;
     gap: 15px;
-    width: 100%;
     justify-content: center;
 }
 
 
-@media (max-width: 991px) {
-    .cookie-heading {
-        font-size: 20px;
+@media (max-width: 767px) {
+    .cookieContainer{
+        flex-direction: column;
+        gap: 15px;
     }
-
-    .cookie-text {
-        font-size: 14px;
+    .cookie-text{
+        text-align: center;
     }
 }
