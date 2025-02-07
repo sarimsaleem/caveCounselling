@@ -35,20 +35,38 @@ function GetInTouchMap() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const form = event.target;
+    
         const firstName = document.getElementById("firstName").value;
         const lastName = document.getElementById("lastName").value;
         const email = document.getElementById("email").value;
         const subject = document.getElementById("subject").value;
         const message = document.getElementById("message").value;
-
-        const mailtoLink = `mailto:cavecounselling@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-            `Name: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`
-        )}`;
-
+    
+        const emailTemplate = `
+            Hello,
+    
+            You have received a new message from your website contact form.
+    
+            ------
+            📌 Name: ${firstName} ${lastName}
+            📧 Email: ${email}
+            🏷️ Subject: ${subject}
+    
+            ✉️ Message:
+            ${message}
+            ------
+    
+            Best Regards,
+            Cave Counselling
+        `;
+    
+        const mailtoLink = `mailto:sarimsaleem07@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailTemplate)}`;
+    
         window.location.href = mailtoLink;
-        form.reset();
+    
+        event.target.reset();
     };
+    
 
     return (
         <>
