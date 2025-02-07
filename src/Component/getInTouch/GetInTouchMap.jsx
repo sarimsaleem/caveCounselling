@@ -1,53 +1,57 @@
-import React from 'react'
+import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram } from "react-icons/fa";
-import './GetInTouchMap.css'
+import "./GetInTouchMap.css";
 import fees from "../../Assets/fees.jpg"
 
 function GetInTouchMap() {
 
     const infoCards = [
-        { 
-            title: "Head Office", 
-            address: "Wood street Walthamstow, east London​", 
+        {
+            title: "Head Office",
+            address: "Wood street Walthamstow, east London​",
             icon: <FaMapMarkerAlt />,
             link: "https://www.google.com/maps/search/?api=1&query=Wood+street+Walthamstow+east+London"
         },
-        { 
-            title: "Phone Number", 
-            address: "07777 966 289", 
+        {
+            title: "Phone Number",
+            address: "07777 966 289",
             icon: <FaPhoneAlt />,
             link: "tel:+447777966289"
         },
-        { 
-            title: "Send Email", 
-            address: "cavecounselling@outlook.com", 
+        {
+            title: "Send Email",
+            address: "cavecounselling@outlook.com",
             icon: <FaEnvelope />,
             link: "mailto:cavecounselling@outlook.com"
         },
-        { 
-            title: "Instagram", 
-            address: "cave_counselling", 
+        {
+            title: "Instagram",
+            address: "cave_counselling",
             icon: <FaInstagram />,
             link: "https://www.instagram.com/cave_counselling/"
         },
     ];
-    
 
 
-    function handleSubmit(event) {
+    const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
 
-        if (form.checkValidity()) {
+        const mailtoLink = `mailto:cavecounselling@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+            `Name: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`
+        )}`;
 
-            form.reset();
-        }
-    }
-
+        window.location.href = mailtoLink;
+        form.reset();
+    };
 
     return (
         <>
-
             <div className="contact-us section-padding" >
                 <div className="container">
                     <div className="row">
@@ -79,23 +83,23 @@ function GetInTouchMap() {
                                 <div className="info-cards-container">
                                     <div className="info-cards">
                                         {infoCards.map((card, index) => (
-                                            <a href={card.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "var(--second-bg-color)", width: "100%" }}> 
-                                            <div className="info-card" key={index}>
-                                            <div className="info-card-icon">
-                                                {card.icon}
-                                            </div>
-                                            <div className="info-card-content">
-                                                <h4>{card.title}</h4>
-                                                {card.link ? (
-                                                    <p>
-                                                            {card.address}
-                                                    </p>
-                                                ) : (
-                                                    <p>{card.address}</p>
-                                                )}
-                                            </div>
-                                        </div>
-                                        </a>
+                                            <a href={card.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "var(--second-bg-color)", width: "100%" }}>
+                                                <div className="info-card" key={index}>
+                                                    <div className="info-card-icon">
+                                                        {card.icon}
+                                                    </div>
+                                                    <div className="info-card-content">
+                                                        <h4>{card.title}</h4>
+                                                        {card.link ? (
+                                                            <p>
+                                                                {card.address}
+                                                            </p>
+                                                        ) : (
+                                                            <p>{card.address}</p>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            </a>
                                         ))}
                                     </div>
                                 </div>
@@ -148,42 +152,41 @@ function GetInTouchMap() {
                 </div>
             </div>
 
-            <div className='contact-us-form section-padding' id='contact-me' >
-                <div className='container'>
+            <div className="contact-us-form section-padding" id="contact-me">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-12">
                             <div className="contact-us-form-heading heading-with-sub">
-                                <h3 className="p-0 ">Get In Touch With Me</h3>
-                                <h6 className="p-0 m-0">Fill the form below so i can get to know you and your needs better.</h6>
-                                <p>Feel free to contact me if you have any questions about how counselling works, or to arrange an initial assessment appointment.</p>
-                                <p>Booking an initial session of Counselling can often help in your decision about whether Counselling is right for you or your child. There is no obligation to continue after this initial session.</p>
+                                <h3 className="p-0">Get In Touch With Me</h3>
+                                <h6 className="p-0 m-0">
+                                    Fill the form below so I can get to know you and your needs better.
+                                </h6>
+                                <p>
+                                    Feel free to contact me if you have any questions about how counseling works, or to
+                                    arrange an initial assessment appointment.
+                                </p>
+                                <p>
+                                    Booking an initial session of counseling can often help in your decision about
+                                    whether counseling is right for you or your child. There is no obligation to
+                                    continue after this initial session.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div className='contact-us-form-container'>
+                    <div className="contact-us-form-container">
                         <div className="row align-items-center justify-content-center">
                             <div className="col-md-12 col-sm-12 col-xl-8 col-lg-8">
-                                <form id="contactForm" onsubmit="handleSubmit(event)">
+                                <form id="contactForm" onSubmit={handleSubmit}>
                                     <div className="col-md-12">
                                         <div className="row" style={{ marginBottom: "0px" }}>
+
                                             <div className="fst-lst col-md-6 col-12">
                                                 <label className='contact-label' htmlFor="">First Name</label>
-                                                <input type="text"
-                                                    name='name'
-                                                    className="form-control"
-                                                    id="John"
-                                                    placeholder="john *"
-                                                    required />
+                                                <input className="form-control" type="text" name="firstName" id="firstName" placeholder="john *" required />
                                             </div>
                                             <div className="col-6 col-md-6 col-12 email">
                                                 <label className='contact-label' htmlFor="">Last Name</label>
-                                                <input
-                                                    type="text"
-                                                    name='lastName'
-                                                    className="form-control"
-                                                    id="exampleFormControlInput1"
-                                                    placeholder="doe *"
-                                                    required />
+                                                <input className="form-control" type="text" name="lastName" id="lastName" placeholder="doe *" required />
                                             </div>
                                         </div>
                                     </div>
@@ -191,33 +194,18 @@ function GetInTouchMap() {
                                         <div className="row" style={{ marginBottom: "0px" }}>
                                             <div className="fst-lst col-md-6 col-12">
                                                 <label className='contact-label' htmlFor="">E-mail</label>
-                                                <input
-                                                    name='email'
-                                                    type="email"
-                                                    className="form-control"
-                                                    id="exampleFormControlInput1"
-                                                    placeholder="example@example.com *"
-                                                    required />
+                                                <input className="form-control" type="email" name="email" id="email" placeholder="example@example.com *" required />
                                             </div>
+
                                             <div className="col-6 col-md-6 col-12 email">
                                                 <label className='contact-label' htmlFor="">Subject</label>
-                                                <input
-                                                    name='select'
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="exampleFormControlInput1"
-                                                    placeholder="your subject *"
-                                                    required />
+                                                <input className="form-control" type="text" name="subject" id="subject" placeholder="your subject *" required />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="text-section">
                                         <label className='contact-label' htmlFor="">Message</label>
-                                        <textarea className="form-control"
-                                            name='message'
-                                            placeholder="message..."
-                                            id="exampleFormControlTextarea1" rows="8"
-                                            required></textarea>
+                                        <textarea className="form-control" name="message" id="message" placeholder="your message..." rows="8" required></textarea>
                                     </div>
                                     <div className="contact-btn">
                                         <button type="submit">Send Your Message</button>
@@ -228,10 +216,8 @@ function GetInTouchMap() {
                     </div>
                 </div>
             </div>
-
-
         </>
-    )
+    );
 }
 
-export default GetInTouchMap
+export default GetInTouchMap;
