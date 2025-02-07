@@ -8,16 +8,10 @@ import Cloader from "./Loader/Cloader";
 import GetInTouchMap from "./getInTouch/GetInTouchMap";
 import AboutUs from "./AboutUs/AboutUs";
 import AboutMe from "./AboutMe/AboutMe";
-import Qualifications from "./Qualifications/Qualifications";
 import FAQ from "./FAQ/faq";
 import Services from "./Services/Services";
 import Values from "./Values/Values";
 import SubHeader from "./Hero/subHeader";
-
-
-
-
-
 
 export {
     Cloader,
@@ -32,7 +26,6 @@ export {
     FAQ,
     Values,
     AboutMe,
-    Qualifications,
     Services,
     SubHeader
 }

@@ -48,7 +48,6 @@ const Testimonials = () => {
                 </ul>
                 <div className="footer-icons">
                   <a href="https://www.instagram.com/cave_counselling/?igsh=d2wyZHltcXZwcGZu#" className="icon linkedin"> <i><FaInstagram size={30} /></i></a>
-                  {/* <a href="#" className="icon linkedin"> <i><FaFacebook size={30} /></i></a> */}
                   <a href="https://www.linkedin.com/in/shama-iqbal-68682430a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="icon linkedin"> <i><FaLinkedin size={30} /></i></a>
                 </div>
               </div>
