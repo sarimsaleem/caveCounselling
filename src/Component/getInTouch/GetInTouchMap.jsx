@@ -60,7 +60,7 @@ function GetInTouchMap() {
             Cave Counselling
         `;
     
-        const mailtoLink = `mailto:sarimsaleem07@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailTemplate)}`;
+        const mailtoLink = `mailto:cavecounselling@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailTemplate)}`;
     
         window.location.href = mailtoLink;
     
