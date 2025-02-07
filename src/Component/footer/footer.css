@@ -54,6 +54,21 @@
   width: 40px;
 }
 
+.footer-badge-parent{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+  flex-direction: column;
+}
+.footer-badge-parent img{
+object-fit: contain;
+  max-height: 130px;
+  width: 200px;
+
+}
+
 @media (max-width: 650px) {
   .footer-links {
     gap: 5px;

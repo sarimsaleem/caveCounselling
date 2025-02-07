@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './counselling.css';
-import counellingimg1 from "../../Assets/counellingimg1.jpg"
-import counellingimg2 from "../../Assets/counellingimg3.jpg"
-import counellingimg3 from "../../Assets/counellingimg4.jpg"
+import counellingimg1 from "../../Assets/counellingimg1.webp"
+import counellingimg2 from "../../Assets/counellingimg3.webp"
+import counellingimg3 from "../../Assets/counellingimg4.webp"
 
 
 const Counselling = () => {
