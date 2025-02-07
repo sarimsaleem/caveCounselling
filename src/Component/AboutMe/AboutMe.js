@@ -1,4 +1,4 @@
-import director from '../../Assets/aboutme .png'
+import director from '../../Assets/aboutme.webp'
 import './aboutMe.css'
 
 function AboutMe() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram } from "react-icons/fa";
 import "./GetInTouchMap.css";
-import fees from "../../Assets/fees.jpg"
+import fees from "../../Assets/fees.webp"
 
 function GetInTouchMap() {
 

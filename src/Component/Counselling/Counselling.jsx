@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './counselling.css';
-import counellingimg1 from "../../Assets/counellingImg1.webp"
-import counellingimg3 from "../../Assets/counellingImg3.webp"
-import counellingimg4 from "../../Assets/counellingImg4.webp"
+import counellingimg1 from "../../Assets/counellingimg1.jpg"
+import counellingimg2 from "../../Assets/counellingimg3.jpg"
+import counellingimg3 from "../../Assets/counellingimg4.jpg"
 
 
 const Counselling = () => {
@@ -47,12 +47,12 @@ const Counselling = () => {
                             </div>
                             <div className="col-sm-12 col-md-6 col-lg-4">
                                 <div className="counselling-ing-container">
-                                    <img src={counellingimg3} className='counselling-ing-container' alt="" />
+                                    <img src={counellingimg2} className='counselling-ing-container' alt="" />
                                 </div>
                             </div>
                             <div className="col-sm-12 col-md-6 col-lg-4">
                                 <div className="counselling-ing-container">
-                                    <img src={counellingimg4} className='counselling-ing-container' alt="" />
+                                    <img src={counellingimg3} className='counselling-ing-container' alt="" />
                                 </div>
                             </div>
                         </div>

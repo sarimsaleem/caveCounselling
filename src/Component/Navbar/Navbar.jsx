@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import './navbar.css';
-import logo from '../../Assets/logo.png';
+import logo from '../../Assets/logo.webp';
 import { HashLink } from 'react-router-hash-link';
 import { FaPhone } from 'react-icons/fa6';
 import { IoIosMail } from 'react-icons/io';

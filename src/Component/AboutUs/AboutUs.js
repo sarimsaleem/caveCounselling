@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './about.css';
-import about from './../../Assets/aboutimg.png';
+import about from './../../Assets/aboutimg.webp';
 
 function AboutUs() {
     const sectionRef = useRef(null);

@@ -2,10 +2,10 @@
     background-color: beige;
 }
 .service-card{
-    background-image: url("../../Assets/adult.jpg");
+    background-image: url("../../Assets/adult.webp");
 }
 .child-counselling{
-    background-image: url("../../Assets/child.jpg");
+    background-image: url("../../Assets/child.webp");
 }
 
 .service-card,
