@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './services.css';
 import adultCounselling from "../../Assets/adultCoun.webp"
-import  childCounselling from "../../Assets/childCoun.png"
+import  childCounselling from "../../Assets/childCoun.webp"
 
 const Services = () => {
     const navigate = useNavigate();
