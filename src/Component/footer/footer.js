@@ -2,6 +2,8 @@ import React from 'react';
 import Logo from '../../Assets/mainfooter.webp';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa6';
 import './footer.css';
+import badge1 from "../../Assets/badge1.webp"
+import badge2 from "../../Assets/badge2.webp"
 
 const Testimonials = () => {
   return (
@@ -19,9 +21,9 @@ const Testimonials = () => {
                 <p style={{ color: 'var(--text-color)', lineHeight: "2" }}><a href="https://www.google.com/maps/search/?api=1&query=Wood+street+Walthamstow+east+London" target='blank' style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >Wood street Walthamstow, east London.</a></p>
 
                 <h6 style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }}>Phone Number</h6>
-                <p style={{margin: ""}}><a href="tel:+07777966289" style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >T: 07777 966 289</a></p>
+                <p style={{ margin: "" }}><a href="tel:+07777966289" style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >T: 07777 966 289</a></p>
                 <h6 style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >Email Address</h6>
-                <p style={{margin: ""}}><a href="mailto:cavecounselling@outlook.com" style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >cavecounselling@outlook.com</a></p>
+                <p style={{ margin: "" }}><a href="mailto:cavecounselling@outlook.com" style={{ color: 'var(--text-color)', lineHeight: "2", margin: "0" }} >cavecounselling@outlook.com</a></p>
               </div>
             </div>
 
@@ -36,15 +38,15 @@ const Testimonials = () => {
               />
             </div>
 
-            <div className="col-sm-12 col-md-6 col-lg-4">
+            <div className="col-sm-12 col-md-6 col-lg-2">
               <div className="footer-section">
                 <h4 style={{ color: 'var(--text-color)', fontSize: "20px", marginBlock: "15px" }}>Menu</h4>
                 <ul className='list' style={{ listStyle: "none", padding: "0" }}>
-                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{textDecoration:"none", color:"var(--text-color)"}} href="/#home"> Home </a></li>
-                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{textDecoration:"none", color:"var(--text-color)"}} href="/#services">My Services</a></li>
-                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{textDecoration:"none", color:"var(--text-color)"}} href="/#about-me">About Us</a></li>
-                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{textDecoration:"none", color:"var(--text-color)"}} href="/#faq">FAQ</a></li>
-                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{textDecoration:"none", color:"var(--text-color)"}} href="/#contact-me">Contact Me</a></li>
+                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{ textDecoration: "none", color: "var(--text-color)" }} href="/#home"> Home </a></li>
+                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{ textDecoration: "none", color: "var(--text-color)" }} href="/#services">My Services</a></li>
+                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{ textDecoration: "none", color: "var(--text-color)" }} href="/#about-me">About Us</a></li>
+                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{ textDecoration: "none", color: "var(--text-color)" }} href="/#faq">FAQ</a></li>
+                  <li style={{ color: 'var(--text-color)', lineHeight: "2" }} ><a style={{ textDecoration: "none", color: "var(--text-color)" }} href="/#contact-me">Contact Me</a></li>
                 </ul>
                 <div className="footer-icons">
                   <a href="https://www.instagram.com/cave_counselling/?igsh=d2wyZHltcXZwcGZu#" className="icon linkedin"> <i><FaInstagram size={30} /></i></a>
@@ -52,10 +54,19 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
+
+            <div className="col-sm-12 col-md-6 col-lg-2">
+              <div className="footer-section">
+                <div className="footer-badge-parent">
+                  <img src={badge2} alt="Cave Consulting Logo" />
+                  <img src={badge1} alt="Cave Consulting Logo" />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </footer>
-
 
 
       <div className="footer-content" style={{ background: "var(--second-bg-color)", }}>

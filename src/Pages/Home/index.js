@@ -1,5 +1,5 @@
 import React from 'react'
-import { Category, HeroSection, Testimonials, FAQ, GetInTouchMap, AboutUs, AboutMe, Services, Values, SubHeader } from '../../Component'
+import { Category, HeroSection, Testimonials, FAQ, GetInTouchMap, AboutUs, AboutMe, Services, Values, MyLocation } from '../../Component'
 
 function Home() {
   return (
@@ -9,6 +9,7 @@ function Home() {
       <Services />
       <AboutMe />
       <AboutUs />
+      <MyLocation />
       <GetInTouchMap />
       <Values />
       <Testimonials />
