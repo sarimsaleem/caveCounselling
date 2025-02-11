@@ -1,30 +1,42 @@
-import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import React from "react";
 import "./GetInTouchMap.css";
 
 function GetInTouchMap() {
-    const form = useRef();
 
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        emailjs.sendForm(
-            "service_sazi7cx",  
-            "template_qpd1758", 
-            form.current,
-            "XwTfcKiagzY0CXetf" 
-        ).then(
-            (response) => {
-                console.log("SUCCESS!", response.status, response.text);
-                alert("Your message has been sent successfully!");
-                event.target.reset(); 
-            },
-            (error) => {
-                console.log("FAILED...", error);
-                alert("Something went wrong. Please try again.");
-            }
-        );
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        const emailTemplate = `
+            Hello,
+    
+            You have received a new message from your website contact form.
+    
+            ------
+            📌 Name: ${firstName} ${lastName}
+            📧 Email: ${email}
+            🏷️ Subject: ${subject}
+    
+            ✉️ Message:
+            ${message}
+            ------
+    
+            Best Regards,
+            Cave Counselling
+        `;
+
+        const mailtoLink = `mailto:sarimsaleem07@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailTemplate)}`;
+
+        window.location.href = mailtoLink;
+
+        event.target.reset();
     };
+
 
     return (
         <>
@@ -52,16 +64,17 @@ function GetInTouchMap() {
                     <div className="contact-us-form-container">
                         <div className="row align-items-center justify-content-center">
                             <div className="col-md-12 col-sm-12 col-xl-8 col-lg-8">
-                                <form ref={form} id="contactForm" onSubmit={handleSubmit}>
+                                <form id="contactForm" onSubmit={handleSubmit}>
                                     <div className="col-md-12">
                                         <div className="row" style={{ marginBottom: "0px" }}>
+
                                             <div className="fst-lst col-md-6 col-12">
                                                 <label className='contact-label' htmlFor="">First Name</label>
-                                                <input className="form-control" type="text" name="firstName" id="firstName" placeholder="John *" required />
+                                                <input className="form-control" type="text" name="firstName" id="firstName" placeholder="john *" required />
                                             </div>
                                             <div className="col-6 col-md-6 col-12 email">
                                                 <label className='contact-label' htmlFor="">Last Name</label>
-                                                <input className="form-control" type="text" name="lastName" id="lastName" placeholder="Doe *" required />
+                                                <input className="form-control" type="text" name="lastName" id="lastName" placeholder="doe *" required />
                                             </div>
                                         </div>
                                     </div>
@@ -74,13 +87,13 @@ function GetInTouchMap() {
 
                                             <div className="col-6 col-md-6 col-12 email">
                                                 <label className='contact-label' htmlFor="">Subject</label>
-                                                <input className="form-control" type="text" name="subject" id="subject" placeholder="Your subject *" required />
+                                                <input className="form-control" type="text" name="subject" id="subject" placeholder="your subject *" required />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="text-section">
                                         <label className='contact-label' htmlFor="">Message</label>
-                                        <textarea className="form-control" name="message" id="message" placeholder="Your message..." rows="8" required></textarea>
+                                        <textarea className="form-control" name="message" id="message" placeholder="your message..." rows="8" required></textarea>
                                     </div>
                                     <div className="contact-btn">
                                         <button type="submit">Send Your Message</button>
@@ -96,4 +109,3 @@ function GetInTouchMap() {
 }
 
 export default GetInTouchMap;
-
