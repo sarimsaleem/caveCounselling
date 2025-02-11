@@ -4,49 +4,52 @@ import "./GetInTouchMap.css";
 
 function GetInTouchMap() {
     const [loading, setLoading] = useState(false); 
-    const [firstName, setFirstName] = useState(""); 
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [messageText, setMessageText] = useState("");
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        subject: "",
+        email: "",
+        message: "",
+      });
 
-    useEffect(() => {
-        const form = document.getElementById("contactForm");
 
-        if (form) {
-            const handleSubmit = async (event) => {
-                event.preventDefault();
-                setLoading(true); 
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
 
-                let formData = new FormData(form);
 
-                try {
-                    let response = await fetch(form.action, {
-                        method: form.method,
-                        body: formData,
-                    });
+    const sendEmail = async (e) => {
+        e.preventDefault();
+        setLoading(true)
+        const formDataToSend = new FormData();
+        formDataToSend.append("firstName", formData.firstName);
+        formDataToSend.append("lastName", formData.lastName);
+        formDataToSend.append("subject", formData.subject);
+        formDataToSend.append("email", formData.email);
+        formDataToSend.append("message", formData.message);
+    
+        const response = await fetch("https://cavecounselling.com/send-email.php", {
+          method: "POST",
+          body: formDataToSend,
+        });
+    
+        const result = await response.text();
+    
+        if (result === "success") {
+            setFormData({
+                firstName: "",
+                lastName: "",
+                subject: "",
+                email: "",
+                message: "",
+              });
+            message.success("Email sent successfully!");
+        } else {
+            message.error("Failed to send email.");
+        }
+    setLoading(false)
 
-                    if (response.ok) {
-                        message.success("Thank you! Your message has been sent."); 
-                        form.reset();
-                    } else {
-                        message.error("Something went wrong. Please try again.");
-                    }
-                } catch (error) {
-                    console.error("Error:", error);
-                    message.error("An error occurred. Please try again.");
-                } finally {
-                    setLoading(false); 
-                }
-            };
-
-            form.addEventListener("submit", handleSubmit);
-
-            return () => {
-                form.removeEventListener("submit", handleSubmit);
-            };
-        }
-    }, []);
+      };
 
     return (
         <div className="contact-us-form section-padding" id="contact-me">
@@ -69,9 +72,10 @@ function GetInTouchMap() {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-md-12 col-sm-12 col-xl-8 col-lg-8">
                             <form
-                                id="contactForm"
-                                action="https://formsubmit.co/0f2fde426d460ef8d304fb6dcc84e445"
-                                method="POST"
+                                // id="contactForm"
+                                // action="https://formsubmit.co/sarimsaleem07@gmail.com"
+                                // method="POST"
+                                onSubmit={sendEmail}
                             >
                                 <div className="col-md-12">
                                     <div className="row">
@@ -82,8 +86,8 @@ function GetInTouchMap() {
                                                 type="text"
                                                 name="firstName"
                                                 placeholder="John *"
-                                                value={firstName}
-                                                onChange={(e) => setFirstName(e.target.value)}
+                                                value={formData?.firstName}
+                                                onChange={handleChange}
                                                 required
                                             />
                                         </div>
@@ -94,8 +98,8 @@ function GetInTouchMap() {
                                                 type="text"
                                                 name="lastName"
                                                 placeholder="Doe *"
-                                                value={lastName}
-                                                onChange={(e) => setLastName(e.target.value)}
+                                                value={formData?.lastName}
+                                                onChange={handleChange}
                                                 required
                                             />
                                         </div>
@@ -110,8 +114,8 @@ function GetInTouchMap() {
                                                 type="email"
                                                 name="email"
                                                 placeholder="example@example.com *"
-                                                value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
+                                                value={formData?.email}
+                                                onChange={handleChange}
                                                 required
                                             />
                                         </div>
@@ -122,17 +126,13 @@ function GetInTouchMap() {
                                                 type="text"
                                                 name="subject"
                                                 placeholder="Your subject *"
-                                                value={subject}
-                                                onChange={(e) => setSubject(e.target.value)}
+                                                value={formData?.subject}
+                                                onChange={handleChange}
                                                 required
                                             />
                                         </div>
                                     </div>
                                 </div>
-
-                                <input type="hidden" name="_captcha" value="false" />
-                                <input type="hidden" name="_template" value="box" />
-                                <input type="hidden" name="_subject" value={`Request For Appointment From ${firstName}`} />
 
                                 <div className="text-section">
                                     <label className="contact-label">Message</label>
@@ -141,8 +141,8 @@ function GetInTouchMap() {
                                         name="message"
                                         placeholder="Your message..."
                                         rows="8"
-                                        value={messageText}
-                                        onChange={(e) => setMessageText(e.target.value)}
+                                        value={formData?.message}
+                                        onChange={handleChange}
                                         required
                                     ></textarea>
                                 </div>
