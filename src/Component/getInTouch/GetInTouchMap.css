@@ -99,6 +99,7 @@
   border: 1px solid #d3caca;
   border-radius: 0;
   height: 57px;
+  color: var(--second-bg-color);
 }
 
 .text-section>textarea {

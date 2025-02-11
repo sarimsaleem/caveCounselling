@@ -4,6 +4,11 @@ import "./GetInTouchMap.css";
 
 function GetInTouchMap() {
     const [loading, setLoading] = useState(false); 
+    const [firstName, setFirstName] = useState(""); 
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [messageText, setMessageText] = useState("");
 
     useEffect(() => {
         const form = document.getElementById("contactForm");
@@ -77,6 +82,8 @@ function GetInTouchMap() {
                                                 type="text"
                                                 name="firstName"
                                                 placeholder="John *"
+                                                value={firstName}
+                                                onChange={(e) => setFirstName(e.target.value)}
                                                 required
                                             />
                                         </div>
@@ -87,6 +94,8 @@ function GetInTouchMap() {
                                                 type="text"
                                                 name="lastName"
                                                 placeholder="Doe *"
+                                                value={lastName}
+                                                onChange={(e) => setLastName(e.target.value)}
                                                 required
                                             />
                                         </div>
@@ -101,6 +110,8 @@ function GetInTouchMap() {
                                                 type="email"
                                                 name="email"
                                                 placeholder="example@example.com *"
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
                                                 required
                                             />
                                         </div>
@@ -111,6 +122,8 @@ function GetInTouchMap() {
                                                 type="text"
                                                 name="subject"
                                                 placeholder="Your subject *"
+                                                value={subject}
+                                                onChange={(e) => setSubject(e.target.value)}
                                                 required
                                             />
                                         </div>
@@ -119,6 +132,7 @@ function GetInTouchMap() {
 
                                 <input type="hidden" name="_captcha" value="false" />
                                 <input type="hidden" name="_template" value="box" />
+                                <input type="hidden" name="_subject" value={`Request For Appointment From ${firstName}`} />
 
                                 <div className="text-section">
                                     <label className="contact-label">Message</label>
@@ -127,12 +141,14 @@ function GetInTouchMap() {
                                         name="message"
                                         placeholder="Your message..."
                                         rows="8"
+                                        value={messageText}
+                                        onChange={(e) => setMessageText(e.target.value)}
                                         required
                                     ></textarea>
                                 </div>
 
                                 <div className="contact-btn">
-                                    <Button  htmlType="submit" loading={loading} disabled={loading}>
+                                    <Button htmlType="submit" loading={loading} disabled={loading}>
                                         {loading ? "Sending..." : "Send Your Message"}
                                     </Button>
                                 </div>
