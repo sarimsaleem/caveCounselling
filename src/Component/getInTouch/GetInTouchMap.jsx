@@ -1,113 +1,147 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { message, Button } from "antd"; 
 import "./GetInTouchMap.css";
 
 function GetInTouchMap() {
+    const [loading, setLoading] = useState(false); 
 
-    const handleSubmit = (event) => {
-        // event.preventDefault();
+    useEffect(() => {
+        const form = document.getElementById("contactForm");
 
-        // const firstName = document.getElementById("firstName").value;
-        // const lastName = document.getElementById("lastName").value;
-        // const email = document.getElementById("email").value;
-        // const subject = document.getElementById("subject").value;
-        // const message = document.getElementById("message").value;
+        if (form) {
+            const handleSubmit = async (event) => {
+                event.preventDefault();
+                setLoading(true); 
 
-        // const emailTemplate = `
-        //     Hello,
-    
-        //     You have received a new message from your website contact form.
-    
-        //     ------
-        //     📌 Name: ${firstName} ${lastName}
-        //     📧 Email: ${email}
-        //     🏷️ Subject: ${subject}
-    
-        //     ✉️ Message:
-        //     ${message}
-        //     ------
-    
-        //     Best Regards,
-        //     Cave Counselling
-        // `;
+                let formData = new FormData(form);
 
-        // const mailtoLink = `mailto:sarimsaleem07@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailTemplate)}`;
+                try {
+                    let response = await fetch(form.action, {
+                        method: form.method,
+                        body: formData,
+                    });
 
-        // window.location.href = mailtoLink;
+                    if (response.ok) {
+                        message.success("Thank you! Your message has been sent."); 
+                        form.reset();
+                    } else {
+                        message.error("Something went wrong. Please try again.");
+                    }
+                } catch (error) {
+                    console.error("Error:", error);
+                    message.error("An error occurred. Please try again.");
+                } finally {
+                    setLoading(false); 
+                }
+            };
 
-        event.target.reset();
-    };
+            form.addEventListener("submit", handleSubmit);
 
+            return () => {
+                form.removeEventListener("submit", handleSubmit);
+            };
+        }
+    }, []);
 
     return (
-        <>
-            <div className="contact-us-form section-padding" id="contact-me">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="contact-us-form-heading heading-with-sub">
-                                <h3 className="p-0">Get In Touch With Me</h3>
-                                <h6 className="p-0 m-0">
-                                    Fill the form below so I can get to know you and your needs better.
-                                </h6>
-                                <p>
-                                    Feel free to contact me if you have any questions about how counseling works, or to
-                                    arrange an initial assessment appointment.
-                                </p>
-                                <p>
-                                    Booking an initial session of counseling can often help in your decision about
-                                    whether counseling is right for you or your child. There is no obligation to
-                                    continue after this initial session.
-                                </p>
-                            </div>
+        <div className="contact-us-form section-padding" id="contact-me">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="contact-us-form-heading heading-with-sub">
+                            <h3 className="p-0">Get In Touch With Me</h3>
+                            <h6 className="p-0 m-0">
+                                Fill the form below so I can get to know you and your needs better.
+                            </h6>
+                            <p>
+                                Feel free to contact me if you have any questions about how counseling works, or to
+                                arrange an initial assessment appointment.
+                            </p>
                         </div>
                     </div>
-                    <div className="contact-us-form-container">
-                        <div className="row align-items-center justify-content-center">
-                            <div className="col-md-12 col-sm-12 col-xl-8 col-lg-8">
-                                <form id="contactForm"  action="https://formsubmit.co/0f2fde426d460ef8d304fb6dcc84e445" method="POST" >
-                                    <div className="col-md-12">
-                                        <div className="row" style={{ marginBottom: "0px" }}>
-
-                                            <div className="fst-lst col-md-6 col-12">
-                                                <label className='contact-label' htmlFor="">First Name</label>
-                                                <input className="form-control" type="text" name="firstName" id="firstName" placeholder="john *" required />
-                                            </div>
-                                            <div className="col-6 col-md-6 col-12 email">
-                                                <label className='contact-label' htmlFor="">Last Name</label>
-                                                <input className="form-control" type="text" name="lastName" id="lastName" placeholder="doe *" required />
-                                            </div>
+                </div>
+                <div className="contact-us-form-container">
+                    <div className="row align-items-center justify-content-center">
+                        <div className="col-md-12 col-sm-12 col-xl-8 col-lg-8">
+                            <form
+                                id="contactForm"
+                                action="https://formsubmit.co/0f2fde426d460ef8d304fb6dcc84e445"
+                                method="POST"
+                            >
+                                <div className="col-md-12">
+                                    <div className="row">
+                                        <div className="fst-lst col-md-6 col-12">
+                                            <label className="contact-label">First Name</label>
+                                            <input
+                                                className="form-control"
+                                                type="text"
+                                                name="firstName"
+                                                placeholder="John *"
+                                                required
+                                            />
+                                        </div>
+                                        <div className="col-6 col-md-6 col-12 email">
+                                            <label className="contact-label">Last Name</label>
+                                            <input
+                                                className="form-control"
+                                                type="text"
+                                                name="lastName"
+                                                placeholder="Doe *"
+                                                required
+                                            />
                                         </div>
                                     </div>
-                                    <div className="col-md-12">
-                                        <div className="row" style={{ marginBottom: "0px" }}>
-                                            <div className="fst-lst col-md-6 col-12">
-                                                <label className='contact-label' htmlFor="">E-mail</label>
-                                                <input className="form-control" type="email" name="email" id="email" placeholder="example@example.com *" required />
-                                            </div>
-
-                                            <div className="col-6 col-md-6 col-12 email">
-                                                <label className='contact-label' htmlFor="">Subject</label>
-                                                <input className="form-control" type="text" name="subject" id="subject" placeholder="your subject *" required />
-                                            </div>
+                                </div>
+                                <div className="col-md-12">
+                                    <div className="row">
+                                        <div className="fst-lst col-md-6 col-12">
+                                            <label className="contact-label">E-mail</label>
+                                            <input
+                                                className="form-control"
+                                                type="email"
+                                                name="email"
+                                                placeholder="example@example.com *"
+                                                required
+                                            />
+                                        </div>
+                                        <div className="col-6 col-md-6 col-12 email">
+                                            <label className="contact-label">Subject</label>
+                                            <input
+                                                className="form-control"
+                                                type="text"
+                                                name="subject"
+                                                placeholder="Your subject *"
+                                                required
+                                            />
                                         </div>
                                     </div>
-                                    <input type="hidden" name="_captcha" value="false" />
+                                </div>
 
-                                    <div className="text-section">
-                                        <label className='contact-label' htmlFor="">Message</label>
-                                        <textarea className="form-control" name="message" id="message" placeholder="your message..." rows="8" required></textarea>
-                                    </div>
-                                    
-                                    <div className="contact-btn">
-                                        <button type="submit">Send Your Message</button>
-                                    </div>
-                                </form>
-                            </div>
+                                <input type="hidden" name="_captcha" value="false" />
+                                <input type="hidden" name="_template" value="box" />
+
+                                <div className="text-section">
+                                    <label className="contact-label">Message</label>
+                                    <textarea
+                                        className="form-control"
+                                        name="message"
+                                        placeholder="Your message..."
+                                        rows="8"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <div className="contact-btn">
+                                    <Button  htmlType="submit" loading={loading} disabled={loading}>
+                                        {loading ? "Sending..." : "Send Your Message"}
+                                    </Button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

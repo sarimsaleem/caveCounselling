@@ -72,28 +72,24 @@
   margin-bottom: 0;
 }
 
-.contact-btn>button {
-  padding: 12px 30px;
-  background-color: var(--second-bg-color);
-  color: var(--text-color);
-}
-
 .contact-btn {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
-.contact-btn>button {
-  padding: 10px 35px;
-  background-color: var(--them-secondary);
-  color: var(--text-color);
+.contact-btn>Button {
+  padding: 25px 35px;
+  color: var(--text-color) !important;
   border: none;
+  background-color: var(--them-secondary) !important;
+  border-radius: 0px;
 }
 
-.contact-btn>button:hover {
+.contact-btn>Button:hover {
   transition: 0.3s ease all;
-  color: var(--them-color);
+  background-color: var(--them-secondary) !important;
+  color: var(--them-color) !important;
 }
 
 .fst-lst>input,
@@ -106,7 +102,7 @@
 }
 
 .text-section>textarea {
-  color: #391965;
+  color: var(--second-bg-color);
   display: flex;
   padding: 25px 25px 25px 15px;
   border: 1px solid #d3caca;
@@ -172,7 +168,7 @@
     max-width: 100%;
   }
 
-  .contact-btn>button {
+  .contact-btn>Button {
     padding: 15px 25px;
     font-size: 18px;
     background-color: var(--them-secondary);
@@ -197,4 +193,3 @@
     gap: 27px;
   }
 }
-
