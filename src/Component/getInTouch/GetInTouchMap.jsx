@@ -4,35 +4,35 @@ import "./GetInTouchMap.css";
 function GetInTouchMap() {
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        // event.preventDefault();
 
-        const firstName = document.getElementById("firstName").value;
-        const lastName = document.getElementById("lastName").value;
-        const email = document.getElementById("email").value;
-        const subject = document.getElementById("subject").value;
-        const message = document.getElementById("message").value;
+        // const firstName = document.getElementById("firstName").value;
+        // const lastName = document.getElementById("lastName").value;
+        // const email = document.getElementById("email").value;
+        // const subject = document.getElementById("subject").value;
+        // const message = document.getElementById("message").value;
 
-        const emailTemplate = `
-            Hello,
+        // const emailTemplate = `
+        //     Hello,
     
-            You have received a new message from your website contact form.
+        //     You have received a new message from your website contact form.
     
-            ------
-            📌 Name: ${firstName} ${lastName}
-            📧 Email: ${email}
-            🏷️ Subject: ${subject}
+        //     ------
+        //     📌 Name: ${firstName} ${lastName}
+        //     📧 Email: ${email}
+        //     🏷️ Subject: ${subject}
     
-            ✉️ Message:
-            ${message}
-            ------
+        //     ✉️ Message:
+        //     ${message}
+        //     ------
     
-            Best Regards,
-            Cave Counselling
-        `;
+        //     Best Regards,
+        //     Cave Counselling
+        // `;
 
-        const mailtoLink = `mailto:sarimsaleem07@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailTemplate)}`;
+        // const mailtoLink = `mailto:sarimsaleem07@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailTemplate)}`;
 
-        window.location.href = mailtoLink;
+        // window.location.href = mailtoLink;
 
         event.target.reset();
     };
@@ -64,7 +64,7 @@ function GetInTouchMap() {
                     <div className="contact-us-form-container">
                         <div className="row align-items-center justify-content-center">
                             <div className="col-md-12 col-sm-12 col-xl-8 col-lg-8">
-                                <form id="contactForm" onSubmit={handleSubmit}>
+                                <form id="contactForm"  action="https://formsubmit.co/0f2fde426d460ef8d304fb6dcc84e445" method="POST" >
                                     <div className="col-md-12">
                                         <div className="row" style={{ marginBottom: "0px" }}>
 
@@ -91,10 +91,13 @@ function GetInTouchMap() {
                                             </div>
                                         </div>
                                     </div>
+                                    <input type="hidden" name="_captcha" value="false" />
+
                                     <div className="text-section">
                                         <label className='contact-label' htmlFor="">Message</label>
                                         <textarea className="form-control" name="message" id="message" placeholder="your message..." rows="8" required></textarea>
                                     </div>
+                                    
                                     <div className="contact-btn">
                                         <button type="submit">Send Your Message</button>
                                     </div>
