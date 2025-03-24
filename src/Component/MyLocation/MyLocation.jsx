@@ -115,18 +115,17 @@ const MyLocation = () => {
 
                                     <p style={{ marginBottom: "10px" }}><span className='para-bold'>Pricing & Session length : </span></p>
 
-                                    <p style={{ marginBottom: "10px" }}>Individual Adult Counselling  (50 minutes) - £60 </p>
+                                    <p style={{ marginBottom: "10px" }}>Individual Adult Counselling  (50 minutes) - £50 </p>
 
-                                    <p style={{ marginBottom: "10px" }}>Child and Young person Counselling (50 minutes) - £60</p>
+                                    <p style={{ marginBottom: "10px" }}>Child and Young person Counselling (50 minutes) - £50</p>
 
                                     <p style={{ marginBottom: "10px" }}>Please note I also have a limited number of slots for low-income clients and students, so please contact me to discuss this.</p>
 
                                     <p style={{ marginBottom: "10px" }}><span className='para-bold'>Appointments are currently available : </span></p>
 
-                                    <p style={{ marginBottom: "10px" }}> In person sessions: Mondays, Tuesdays and Thursdays 12-4pm.</p>
+                                    <p style={{ marginBottom: "10px" }}> In person sessions: Mondays, Tuesdays and Thursdays 9am- 8pm.</p>
 
-                                    <p style={{ marginBottom: "10px" }}>Online and evening sessions are also available contact me to discuss this.</p>
-
+                                    <p style={{ marginBottom: "10px" }}>online, evening and weekend sessions are also available. Please contact me to discuss.</p>
                                 </div>
                             </div>
                         </div>
