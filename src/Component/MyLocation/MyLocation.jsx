@@ -123,9 +123,9 @@ const MyLocation = () => {
 
                                     <p style={{ marginBottom: "10px" }}><span className='para-bold'>Appointments are currently available : </span></p>
 
-                                    <p style={{ marginBottom: "10px" }}> In person sessions: Mondays, Tuesdays and Thursdays 9am- 8pm.</p>
+                                    <p style={{ marginBottom: "10px" }}>In person sessions: Monday, Tuesdays and Thursdays 9am- 8pm.</p>
 
-                                    <p style={{ marginBottom: "10px" }}>online, evening and weekend sessions are also available. Please contact me to discuss.</p>
+                                    <p style={{ marginBottom: "10px" }}>Online, evening and weekend sessions are also available. Please contact me to discuss.</p>
                                 </div>
                             </div>
                         </div>
