@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa6';
 import './footer.css';
 import badge1 from "../../Assets/badge1.webp"
 import badge2 from "../../Assets/badge2.webp"
+import badge3 from "../../Assets/badge3.webp"
 
 const Testimonials = () => {
   return (
@@ -60,6 +61,7 @@ const Testimonials = () => {
                 <div className="footer-badge-parent">
                   <img src={badge2} alt="Cave Consulting Logo" />
                   <img src={badge1} alt="Cave Consulting Logo" />
+                  <img src={badge3} alt="Cave Consulting Logo" />
                 </div>
               </div>
             </div>

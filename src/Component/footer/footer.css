@@ -64,7 +64,7 @@
 
 .footer-badge-parent img {
   /* width: auto; */
-  width: 166px;
+  width: 90px;
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
